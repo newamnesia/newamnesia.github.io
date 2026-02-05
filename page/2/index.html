@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Blog</title><link rel="manifest" href="/project/manifest.json"><meta name="application-name" content="Blog"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="blog"><meta property="og:title" content="Blog"><meta property="og:url" content="https://newamnesia.github.io/project"><meta property="og:site_name" content="Blog"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://newamnesia.github.io/project/img/og_image.png"><meta property="article:author" content="wandery"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://newamnesia.github.io/project/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://newamnesia.github.io/project"},"headline":"Blog","image":["https://newamnesia.github.io/project/img/og_image.png"],"author":{"@type":"Person","name":"wandery"},"publisher":{"@type":"Organization","name":"Blog","logo":{"@type":"ImageObject","url":"https://newamnesia.github.io/img/logo.svg"}},"description":""}</script><link rel="icon" href="/project/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/project/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/project/"><img src="/project/img/logo.svg" alt="Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/project/">Home</a><a class="navbar-item" href="/project/archives">Archives</a><a class="navbar-item" href="/project/categories">Categories</a><a class="navbar-item" href="/project/tags">Tags</a><a class="navbar-item" href="/project/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2026-01-16T06:15:00.000Z" title="2026/1/16 14:15:00">2026-01-16</time>发表</span><span class="level-item"><time dateTime="2026-01-27T10:04:59.078Z" title="2026/1/27 18:04:59">2026-01-27</time>更新</span><span class="level-item"><a class="link-muted" href="/project/categories/CodeForces/">CodeForces</a></span><span class="level-item">几秒读完 (大约89个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/project/2026/01/16/!CF1076-div3&amp;2193/">CF1076-div3 / Contest 2193</a></p><div class="content"><h3 id="Problem-A"><a href="#Problem-A" class="headerlink" title="Problem A"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2193/problem/A">Problem A</a></h3><p>签到题</p>
+<h3 id="Problem-B"><a href="#Problem-B" class="headerlink" title="Problem B"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2193/problem/B">Problem B</a></h3><p>签到题</p>
+<h3 id="Problem-C"><a href="#Problem-C" class="headerlink" title="Problem C"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2193/problem/C">Problem C</a></h3><p>签到题</p>
+<h3 id="Problem-D"><a href="#Problem-D" class="headerlink" title="Problem D"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2193/problem/D">Problem D</a></h3><p>简单二分</p>
+<h3 id="Problem-E"><a href="#Problem-E" class="headerlink" title="Problem E"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2193/problem/E">Problem E</a></h3><p>简单 DP + 数学</p>
+<h3 id="Problem-F"><a href="#Problem-F" class="headerlink" title="Problem F"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2193/problem/F">Problem F</a></h3><p>简单 DP 策略</p>
+<h3 id="Problem-G"><a href="#Problem-G" class="headerlink" title="Problem G"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2193/problem/G">Problem G</a></h3><p>DFS 序</p>
+<h3 id="Problem-H"><a href="#Problem-H" class="headerlink" title="Problem H"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2193/problem/H">Problem H</a></h3></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-11-25T05:31:33.000Z" title="2025/11/25 13:31:33">2025-11-25</time>发表</span><span class="level-item"><time dateTime="2025-12-27T08:18:59.321Z" title="2025/12/27 16:18:59">2025-12-27</time>更新</span><span class="level-item"><a class="link-muted" href="/project/categories/Cate/">Cate</a></span><span class="level-item">3 分钟读完 (大约416个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/project/2025/11/25/cs/">程设</a></p><div class="content"><h1 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h1><p>快速排序的两个分区方法：$Lomuto$ 单指针，$Hoare$ 双指针</p>
+<p>归并排序在多核情境更快 —— 均分</p>
+<hr>
+<h1 id="Pointers"><a href="#Pointers" class="headerlink" title="Pointers"></a>Pointers</h1><p>&amp;：get address</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">10</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, i);</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%p\n&quot;</span>, &amp;i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/* %X, %x, %lu</span></span><br><span class="line"><span class="comment">%p 64bit</span></span><br><span class="line"><span class="comment">%x 32bit(不完整)</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">printf(&quot;%p\n&quot;, &amp;(i + 1)); 报错</span></span><br><span class="line"><span class="comment">左值：可以出现在赋值号左侧的值</span></span><br><span class="line"><span class="comment">    a = 6 √</span></span><br><span class="line"><span class="comment">    (a + 1) = 6 ×</span></span><br><span class="line"><span class="comment">    a # 2 = a[2] ???</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> a[<span class="number">3</span>] = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>&#125;;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%p\n&quot;</span>, &amp;a[<span class="number">0</span>]);</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%p\n&quot;</span>, &amp;a[<span class="number">1</span>]);</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%p\n&quot;</span>, &amp;a[<span class="number">2</span>]);</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%p\n&quot;</span>, &amp;a); <span class="comment">//equal to a[0]</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> i = <span class="number">10</span>;</span><br><span class="line"><span class="type">int</span> *p = &amp;i;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%p\n&quot;</span>, p);</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, *p); <span class="comment">//访问变量，*p可作左值9</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> *x, *y; <span class="comment">//with each one</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">access: r &amp; w</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">vp  oid <span class="title">f</span><span class="params">(<span class="type">int</span> *a)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">g</span><span class="params">(<span class="type">int</span> a[])</span></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//equal</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> a[<span class="number">10</span>];</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%p\n&quot;</span>, a);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%p\n&quot;</span>, &amp;a);</span><br><span class="line">    <span class="comment">//equal</span></span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> *p = a;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, p[<span class="number">0</span>]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, *a);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, *(p + <span class="number">5</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, p - a); <span class="comment">// 1?</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>string.h下的函数：</p>
+<ul>
+<li>strlen(char *)</li>
+<li>strcmp</li>
+<li>strcpy</li>
+</ul>
+<p>while(*p++) 可以在字符串末结束</p>
+<hr>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span>&#123;</span><br><span class="line">    <span class="type">int</span> a;</span><br><span class="line">&#125;str;</span><br></pre></td></tr></table></figure>
+
+<p>这样是可以的</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span>&#123;</span><br><span class="line">    <span class="type">int</span> len;</span><br><span class="line">    <span class="type">char</span> content[];</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">node *str = (node*)<span class="built_in">malloc</span>(<span class="built_in">sizeof</span>(<span class="type">int</span>) + <span class="number">32</span>);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span>&#123;</span><br><span class="line">  ...</span><br><span class="line">&#125;node;</span><br><span class="line"></span><br><span class="line">node t;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">node</span>&#123;<span class="comment">//声明</span></span><br><span class="line">  ...</span><br><span class="line">  node *next;</span><br><span class="line">&#125;node;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">char</span> line[<span class="number">30</span>]</span><br><span class="line">line aa;p <span class="comment">//char aa[30]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> *inp</span><br><span class="line">inp p;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">f</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">  ...;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">void</span> (*p)() = f;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifdef</span></span></span><br><span class="line"><span class="comment">//#ifundef</span></span><br><span class="line"><span class="meta">#<span class="keyword">else</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">用处：编译时 <span class="string">&quot;-D xxx&quot;</span> 宏定义</span><br><span class="line">（不需要修改源码）</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">if</span> (表达式)</span></span><br><span class="line"><span class="meta">#<span class="keyword">elif</span> (表达式)</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">多段注释：</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">if</span> 0</span></span><br><span class="line">sss</span><br><span class="line">sss</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line"></span><br><span class="line">恢复：</span><br><span class="line"><span class="meta">#<span class="keyword">if</span> 1</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">error</span> text...</span></span><br><span class="line">让编译器出错</span><br></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>()&#123;</span><br><span class="line">    <span class="type">int</span> i;<span class="comment">//第一个</span></span><br><span class="line">    <span class="keyword">if</span>()&#123;</span><br><span class="line">        <span class="type">int</span> i;<span class="comment">//第二个，此if内优先访问此i</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">f</span><span class="params">(<span class="type">void</span>)</span></span>&#123;</span><br><span class="line">  <span class="comment">//没有参数</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">g</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="comment">//任意参数</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--save-temps：保存编译过程</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h1><p>1.Declaring the pointer of a function within another function’s prototype declaration：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int func( int x, int (*func2)(int, double) )</span><br></pre></td></tr></table></figure>
+
+<p>However, another way <code>int func2(int, double)</code> is acceptable too, for the function type can be automatically converted to function pointer type</p>
+<hr>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-11-05T01:19:43.000Z" title="2025/11/5 09:19:43">2025-11-05</time>发表</span><span class="level-item"><time dateTime="2026-02-05T08:18:08.232Z" title="2026/2/5 16:18:08">2026-02-05</time>更新</span><span class="level-item"><a class="link-muted" href="/project/categories/note/">note</a></span><span class="level-item">19 分钟读完 (大约2844个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/project/2025/11/05/la/">线代笔记</a></p><div class="content"><h1 id="U1"><a href="#U1" class="headerlink" title="U1"></a><em>U1</em></h1><h3 id="1-5"><a href="#1-5" class="headerlink" title="1.5"></a>1.5</h3><p>对于 $\sigma:X\to Y$：</p>
+<ul>
+<li><p>单射：$\alpha_1,\alpha_2\in X,\alpha_1\not=\alpha_2$，则 $\sigma(\alpha_1)\not=\sigma(\alpha_2)$</p>
+</li>
+<li><p>满射：$\forall\beta\in Y,\exists\sigma(\alpha)=\beta$</p>
+</li>
+<li><p>双射：又单又满</p>
+</li>
+</ul>
+<p>恒等映射 / 单位映射：$I(\alpha)=\alpha$</p>
+<ul>
+<li>$I_Y\sigma=\sigma I_X=\sigma$</li>
+</ul>
+<p>可逆映射：$\exists\tau$ 使得 $\tau\sigma=I_X,\sigma\tau=I_Y$。此时 $\tau$ 为 $\sigma$ 的（唯一）逆映射。</p>
+<ul>
+<li>$\sigma$ 可逆的充要条件是双射</li>
+</ul>
+<hr>
+<h3 id="1-7"><a href="#1-7" class="headerlink" title="1.7"></a>1.7</h3><p>内积 / 点积 / 数量积：$a\cdot b=|a||b|\cos\theta$</p>
+<p>外积 / 叉积 / 向量积：$a\times b=|a||b|\sin\theta$</p>
+<ul>
+<li>右手法则：四指由 $a$ 到 $b$ 时大拇指的朝向（即叉积的方向）</li>
+</ul>
+<hr>
+<h3 id="1-10"><a href="#1-10" class="headerlink" title="1.10"></a>1.10</h3><p>代数系统：$&lt;X:f_1,f_2,…,f_k&gt;$</p>
+<ul>
+<li>其中 $X$ 是非空集，$f$ 是代数运算</li>
+</ul>
+<p>下面的群、环、域都属于代数系统</p>
+<hr>
+<p>群：$&lt;G:\circ&gt;$ 满足</p>
+<ul>
+<li><p>$a\circ(b\circ c)=(a\circ b) \circ c$（结合律）</p>
+</li>
+<li><p>$\exists \space a\circ e = e \circ a = a$（存在单位元）</p>
+</li>
+<li><p>$\forall a \in G, \exists b \in G,a \circ b = b \circ a = e$（都可逆）</p>
+<ul>
+<li>若满足交换律，即称交换群，又称 $Abel$ 群。</li>
+</ul>
+</li>
+</ul>
+<p>半群：只满足结合律</p>
+<p>含幺半群：满足结合律，有单位元（即只不可逆）</p>
+<hr>
+<p>环：$&lt;R:+,\circ&gt;$ 满足</p>
+<ul>
+<li><p>$&lt;R:+&gt;$ 是交换群</p>
+</li>
+<li><p>$&lt;R:\circ&gt;$ 是半群（结合律）</p>
+</li>
+<li><p>运算 $\circ$（通常为乘法）对 $+$ 满足分配率，即 $a\circ (b+c)=a\circ b+a\circ c$</p>
+<ul>
+<li>若 $\circ$ 满足交换律，则为交换环</li>
+<li>若存在单位元，则为含幺环</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>域：$&lt;F:+,\circ&gt;$ 为至少含两个元的交换环，且 $&lt;F\backslash\lbrace0\rbrace:\times&gt;$（关于乘法运算）为交换群</p>
+<ul>
+<li>任何数域都包含 $Q$，即 $Q$ 是最小的数域</li>
+</ul>
+<hr>
+<h1 id="U2"><a href="#U2" class="headerlink" title="U2"></a><em>U2</em></h1><h3 id="2-1"><a href="#2-1" class="headerlink" title="2.1"></a>2.1</h3><p>线性空间：$V$ 为非空集，$F$ 为一个域，$V(F)$ 满足：</p>
+<ul>
+<li>$&lt;V:+&gt;$ 是一个交换群</li>
+<li>$\alpha,\beta\in V$，数乘满足如下四条：（1，结合律，内外分配率）<ul>
+<li>$1\alpha=\alpha$</li>
+<li>$\lambda(\mu\alpha)=(\lambda\mu)\alpha$</li>
+<li>$(\lambda+\mu)\alpha=\lambda\alpha+\mu\alpha$</li>
+<li>$\lambda(\alpha+\beta)=\lambda\alpha+\lambda\beta$</li>
+</ul>
+</li>
+<li>注意运算封闭</li>
+</ul>
+<hr>
+<h3 id="2-2"><a href="#2-2" class="headerlink" title="2.2"></a>2.2</h3><p>线性组合：$\alpha=\sum\lambda_i\alpha_i$ 为向量组 $\lbrace\alpha_1,…,\alpha_n\rbrace$ 在域 $F$ 上的线性组合（仅指代一个元素），或者说 $\alpha$ 可用向量组 $\lbrace\alpha_1,…,\alpha_n\rbrace$ 线性表示。</p>
+<p>线性扩张：$L(S)=\lbrace\sum\lambda_i\alpha_i|\lambda_i\in F,\alpha_i\in S\rbrace$</p>
+<ul>
+<li>$L(S)$ 是包含 $S$ 的最小子空间。</li>
+</ul>
+<hr>
+<h3 id="2-7"><a href="#2-7" class="headerlink" title="2.7"></a>2.7</h3><p>内积空间：满足</p>
+<ul>
+<li>$(\alpha,\beta)=(\beta,\alpha)$</li>
+<li>$(\alpha+\beta,\gamma)=(\alpha,\gamma)+(\beta,\gamma)$</li>
+<li>$(\lambda\alpha,\beta)=\lambda(\alpha,\beta)$</li>
+<li>$(\alpha,\alpha)\geq0$，等号成立当且仅当 $\alpha=0$</li>
+</ul>
+<p>则称 $(\alpha,\beta)$ 为两向量的内积，定义了内积的 $V(R)$ 称为实内积空间，有限维实内积空间称为欧氏空间。</p>
+<ul>
+<li>如果在复空间 $V(C)$ 上定义，则需要把第一个条件改为 $(\alpha,\beta)=\overline{(\beta,\alpha)}$。复内积空间通常称为酉空间。</li>
+</ul>
+<p>标准内积：$(\alpha,\beta)=\sum a_ib_i$</p>
+<p>$R[x]_n$ 空间中，多项式内积常用积分定义：$(f(x),g(x))=\int_a^bf(x)g(x)\text{d}x$</p>
+<hr>
+<h3 id="2-8"><a href="#2-8" class="headerlink" title="2.8"></a>2.8</h3><p>单位正交基 / 标准正交基：$B=\lbrace\varepsilon_1,…,\varepsilon_n\rbrace$ 满足</p>
+<p>$$<br>(\varepsilon_i,\varepsilon_j)=<br>\begin{cases}<br>1 &amp; i=j \\<br>0 &amp; i\not=j<br>\end{cases}<br>$$</p>
+<p>$Schmidt$ 正交化：设 $B=\lbrace\alpha_1,…,\alpha_n\rbrace$ 为 $V(R)$ 的一组基</p>
+<ul>
+<li><p>基本思路：$\beta_m=\alpha_m+\lambda_{m-1,m}\beta_{m-1}+…+\lambda_{1,m}\beta_1$</p>
+</li>
+<li><p>$(\beta_m,\beta_k)=(\alpha_m,\beta_k)+\lambda_{km}(\beta_k,\beta_k)=0$ ※</p>
+</li>
+<li><p>$\Rightarrow\lambda_{k,m}=-\frac{(\alpha_m,\beta_k)}{(\beta_k,\beta_k)}$</p>
+</li>
+<li><p>即 $\beta_m=\alpha_m-\sum\frac{(\alpha_m,\beta_k)}{(\beta_k,\beta_k)}\beta_{k}$，最后 $\varepsilon_m=\frac{\beta_m}{|\beta_m|}$</p>
+</li>
+</ul>
+<hr>
+<h3 id="2-9"><a href="#2-9" class="headerlink" title="2.9"></a>2.9</h3><p>空间正交：若 $V(R)$ 的两个子空间 $W_1,W_2$ 满足 $\forall\alpha\in W_1,\forall\beta\in W_2,(\alpha,\beta)=0$，则 $W_1\perp W_2$</p>
+<ul>
+<li>$W_2$ 为 $W_1$ 的正交补，即 $W_2=W_1^{\perp}$</li>
+</ul>
+<hr>
+<h1 id="U3"><a href="#U3" class="headerlink" title="U3"></a><em>U3</em></h1><h3 id="3-1"><a href="#3-1" class="headerlink" title="3.1"></a>3.1</h3><p>线性映射：$\sigma(\lambda\alpha+\mu\beta)=\lambda\sigma(\alpha)+\mu\sigma(\beta)$</p>
+<ul>
+<li>到自身的线性映射也称为线性变换</li>
+</ul>
+<hr>
+<h3 id="3-2"><a href="#3-2" class="headerlink" title="3.2"></a>3.2</h3><p>像：$Im\sigma=\lbrace\beta|\beta=\sigma(\alpha),\alpha\in V_1\rbrace$</p>
+<p>核：$Ker\sigma=\lbrace\alpha|\sigma(\alpha)=0_2,\alpha\in V_1\rbrace$</p>
+<hr>
+<h3 id="3-3"><a href="#3-3" class="headerlink" title="3.3"></a>3.3</h3><p>$L(V_1,V_2)$ 代表线性空间 $V_1$ 到 $V_2$ 的所有线性映射的集合，其也是一个线性空间。</p>
+<hr>
+<h3 id="3-4"><a href="#3-4" class="headerlink" title="3.4"></a>3.4</h3><p>$r(\sigma)=\dim\sigma(V_1)$</p>
+<p>若 $\dim(V_1)=n$，则 $r(\sigma)+\dim(Ker\sigma)=n$</p>
+<p>若 $\sigma\in L(V_1,V_2),V_1,V_2$ 都是 $n$ 维线性空间，则下列命题等价：</p>
+<ul>
+<li>$r(\sigma)=n$，即满秩</li>
+<li>$\sigma$ 是单射</li>
+<li>$\sigma$ 是满射</li>
+<li>$\sigma$ 是可逆线性映射</li>
+</ul>
+<hr>
+<h3 id="3-5"><a href="#3-5" class="headerlink" title="3.5"></a>3.5</h3><p>同构：如果线性空间 $V_1(F)$ 到 $V_2(F)$ 存在一个线性的双射 $\sigma$，则两者同构，记作 $V_1(F)\cong V_2(F)$</p>
+<hr>
+<h1 id="U4"><a href="#U4" class="headerlink" title="U4"></a><em>U4</em></h1><h3 id="4-1"><a href="#4-1" class="headerlink" title="4.1"></a>4.1</h3><p>矩阵集合记为 $M_{m\times n}(F)$ 或 $F^{m\times n}$（元素在域 $F$ 上）</p>
+<ul>
+<li>$m=n$ 时，称为方阵或 $n$ 阶矩阵，集合可记为 $M_n(F)$ 或 $F^n$</li>
+</ul>
+<hr>
+<h3 id="4-5"><a href="#4-5" class="headerlink" title="4.5"></a>4.5</h3><p>如果 $A$ 是 $n$ 阶矩阵，则下列命题等价：</p>
+<ul>
+<li>$A$ 可逆</li>
+<li>存在 $B$ 使得 $BA=E$</li>
+<li>$r(A)=n$，即 $A=(\alpha_1,…,\alpha_n)$，各 $\alpha$ 线性无关</li>
+<li>$AX=0 \rightarrow X=0$</li>
+<li>$\alpha_1,…,\alpha_n$ 是 $F^n$ 的基</li>
+</ul>
+<p>推论：$AB$可逆 $\Leftrightarrow A$ 与 $B$ 都可逆，且 $(AB)^{-1}=B^{-1}A^{-1}$</p>
+<h3 id="4-7"><a href="#4-7" class="headerlink" title="4.7"></a>4.7</h3><p>$A$ 可逆 $\Leftrightarrow$ $A=P_1…P_n$ 初等矩阵乘积</p>
+<hr>
+<h3 id="4-8"><a href="#4-8" class="headerlink" title="4.8"></a>4.8</h3><p>若 $r(A_{m\times n})=k$，则存在可逆矩阵 $P,Q$，满足：</p>
+<p>$$<br>PAQ=<br>\begin{pmatrix}<br>E_k &amp; 0 \\<br>0 &amp; 0<br>\end{pmatrix}<br>=(e_1,…,e_k,0,…)=U_k<br>$$</p>
+<p>若 $A$ 可以通过初等变换转化为 $B$，则称 $A$ 相抵与 $B$（或者说 $A$ 等价于 $B$），记作 $A\cong B$</p>
+<ul>
+<li><p>$U_k$ 是 $A$ 的相抵标准型 / 等价标准型。</p>
+</li>
+<li><p>拆解 $P,Q$ 后得到由初等矩阵乘积组成 $U_k=P_1…P_nAQ_1…Q_m$</p>
+</li>
+</ul>
+<hr>
+<p>$A\in M_n(F)$，则下列命题等价：</p>
+<ul>
+<li>$A$ 可逆</li>
+<li>$r(A)=n$</li>
+<li>齐次线性方程组 $AX=0$ 只有零解</li>
+</ul>
+<hr>
+<p>$r(A+B)\leq r(A)+r(B)$</p>
+<p>$r(AB)\leq \min(r(A),r(B))$</p>
+<p>$r<br>\begin{pmatrix}<br>A &amp; 0 \\<br>0 &amp; B<br>\end{pmatrix}<br>=r(A)+r(B)$</p>
+<hr>
+<p>若 $P,Q$ 分别为 $m,n$ 阶可逆矩阵，$A$ 是 $m\times n$ 矩阵，则</p>
+<p>$$r(PA)=r(A)=r(AQ)=r(PAQ)$$</p>
+<hr>
+<h3 id="4-9"><a href="#4-9" class="headerlink" title="4.9"></a>4.9</h3><p>$$<br>A^T=<br>\begin{pmatrix}<br>A^T_{11} &amp; A^T_{21} \\<br>A^T_{12} &amp; A^T_{22}<br>\end{pmatrix}<br>$$</p>
+<hr>
+<p>$$<br>A=<br>\begin{pmatrix}<br>B &amp; O \\<br>C &amp; D<br>\end{pmatrix}<br>$$</p>
+<p>则</p>
+<p>$$<br>A^{-1}=<br>\begin{pmatrix}<br>B^{-1} &amp; O \\<br>-D^{-1}CB^{-1} &amp; D^{-1}<br>\end{pmatrix}<br>$$</p>
+<p>而一般的</p>
+<p>$$<br>A=<br>\begin{pmatrix}<br>B &amp; F \\<br>C &amp; D<br>\end{pmatrix}<br>=<br>\begin{pmatrix}<br>B &amp; O \\<br>C &amp; D-CB^{-1}F<br>\end{pmatrix}<br>$$</p>
+<hr>
+<p>4.10</p>
+<p>过渡矩阵</p>
+<hr>
+<h1 id="U5"><a href="#U5" class="headerlink" title="U5"></a><em>U5</em></h1><h3 id="5-1"><a href="#5-1" class="headerlink" title="5.1"></a>5.1</h3><p>$n$ 阶行列式可以视作 $F^n\times…\times F^n$ 到 $F$ 的一个映射，记作 $\det A=D(\alpha_1,…,\alpha_n)$，其中 $\alpha_i$ 代表列向量。</p>
+<p>运算法则：</p>
+<ul>
+<li>$D(…,\lambda\alpha_i,…)=\lambda D(…,\alpha_i,…)$</li>
+<li>$D(…,\alpha_i+\beta_i,…)=D(…,\alpha_i,…)+D(…,\beta_i,…)$</li>
+<li>$D(…,\alpha_i,…,\alpha_j,…)=-D(…,\alpha_j,…,\alpha_i,…)$</li>
+<li>$D(e_1,…,e_n)=1$，即</li>
+</ul>
+<p>$$<br>\begin{vmatrix}<br>1 &amp; 0 &amp; … &amp; 0 \\<br>0 &amp; 1 &amp; … &amp; 0 \\<br>… &amp; &amp; &amp; … \\<br>0 &amp; 0 &amp; … &amp; 1<br>\end{vmatrix}<br>=1<br>$$</p>
+<p>延伸：</p>
+<ul>
+<li>$D(…,0,…)=0$</li>
+<li>$D(…,a_i,…)=D(…,a_i+\lambda a_j,…)$<ul>
+<li>上（下）三角行列式等于对角线元素乘积</li>
+</ul>
+</li>
+<li>$\lbrace\alpha_1,…,\alpha_n\rbrace$ 线性相关则 $D(\alpha_i)=0$</li>
+</ul>
+<hr>
+<p>三种初等矩阵及其行列式：</p>
+<ul>
+<li>$E_i(c)=(…,c\times e_i,…),|E_i(c)|=c$</li>
+<li>$E_{ij}=(…,e_j,…,e_i,…),|E_{ij}|=-1$</li>
+<li>$E_{ij}(c)=(…,e_i+c\times e_j,…),|E_{ij}(c)|=1$</li>
+</ul>
+<p>若 $P_i$ 为初等矩阵：$|AP_1…P_n|=|A||P_1|…|P_n|$</p>
+<ul>
+<li>由此可得 $|A^T|=|A|$</li>
+</ul>
+<hr>
+<h3 id="5-2"><a href="#5-2" class="headerlink" title="5.2"></a>5.2</h3><p>余子式：去掉 $a_{ij}$ 所在行列得到的 $n-1$ 阶行列式，称为 $a_{ij}$ 的余子式，记作 $M_{ij}$</p>
+<ul>
+<li>$A_{ij}=(-1)^{i+j}M_{ij}$ 为 $a_{ij}$ 的代数余子式</li>
+</ul>
+<p>$D=\sum a_{ix}A_{ix}=\sum a_{xi}A_{xi},x\in[1,n]$</p>
+<hr>
+<h3 id="5-3"><a href="#5-3" class="headerlink" title="5.3"></a>5.3</h3><p>伴随矩阵：（注意行列互换）</p>
+<p>$A^*=<br>\begin{pmatrix}<br>A_{11} &amp; … &amp; A_{n1} \\<br>… &amp; … &amp; … \\<br>A_{1n} &amp; … &amp; A_{nn}<br>\end{pmatrix}<br>$</p>
+<p>定理：$A^<em>A=AA^</em>=|A|E=|A|^n$</p>
+<p>推论：$A^{-1}=\frac{1}{|A|}A^*$</p>
+<hr>
+<p>$r(A^*)=<br>\begin{cases}<br>n&amp;|A|\not=0\\<br>1&amp;r(A)=n-1\\<br>0&amp;r(A)&lt;n-1<br>\end{cases}$</p>
+<ul>
+<li><p>$A$ 可逆：$(\frac{1}{|A|}A)A^*=E$</p>
+</li>
+<li><p>$A$ 不可逆：$r(A^<em>A)=0\geq r(A^</em>)+r(A)-n$</p>
+</li>
+</ul>
+<p>$A$ 在整数范围内可逆 $\Leftrightarrow |A|=\pm1$</p>
+<ul>
+<li>$|A||A^{-1}|=|E|=1$，整数范围行列式一定是整数</li>
+</ul>
+<hr>
+<h3 id="5-4"><a href="#5-4" class="headerlink" title="5.4"></a>5.4</h3><p>$Cramer$ 法则：$AX=b$ 的唯一解为 $x_j=\frac{D_j}{|A|}$，其中</p>
+<p>$$D_j=|\alpha_1,…,\alpha_{j-1},b,…|$$</p>
+<p>范德蒙德（$Vandermonde$）行列式：</p>
+<p>$$<br>\begin{vmatrix}<br>1 &amp; x_1 &amp; x_1^2 &amp; … \\<br>\vdots \\<br>1 &amp; x_n &amp; x_n^2 &amp; …<br>\end{vmatrix}<br>=\Pi_{i&gt;j}(x_i-x_j)<br>$$</p>
+<ul>
+<li>缺行用扩充法</li>
+</ul>
+<hr>
+<h1 id="U6"><a href="#U6" class="headerlink" title="U6"></a><em>U6</em></h1><h3 id="6-1"><a href="#6-1" class="headerlink" title="6.1"></a>6.1</h3><p>$A\in M_n(F),N(A)$ 为齐次线性方程组 $AX=0$ 的解空间，$r(A)+r(N(A))=n$</p>
+<ul>
+<li>证明比较 $r$ 可以利用其转化为解空间 $N$ 的关系</li>
+</ul>
+<p>解空间的基 $X_1,…,X_k$ 称为基础解系，通过 $A$ 的行变换易得</p>
+<hr>
+<h3 id="6-2"><a href="#6-2" class="headerlink" title="6.2"></a>6.2</h3><p>$AX=b$ 有解判别法：</p>
+<ul>
+<li>$r(A)=r(A,b)$，即系数矩阵的秩等于增广矩阵的秩<ul>
+<li>$b=\sum x_i\alpha_i$，从而 $\dim L(\alpha_i)=\dim L(\alpha_i,b)$</li>
+</ul>
+</li>
+<li>唯一解 $\Leftrightarrow r(A)=r(A,b)=$ 未知数的个数</li>
+</ul>
+<p>定理：</p>
+<ul>
+<li><p>$x_1,x_2$ 为解，则 $x_1-x_2$ 为解</p>
+</li>
+<li><p>$x_0$ 为解，则所有解为 $x_0+N(A)$</p>
+</li>
+</ul>
+<hr>
+<h1 id="U7"><a href="#U7" class="headerlink" title="U7"></a><em>U7</em></h1><h3 id="7-1"><a href="#7-1" class="headerlink" title="7.1"></a>7.1</h3><p>正交变换：$(\sigma(\alpha),\sigma(\beta))=(\alpha,\beta)$</p>
+<ul>
+<li>等价条件：$|\sigma(\alpha)|=|\alpha|$</li>
+</ul>
+<p>正交矩阵：$A^TA=AA^T=E$</p>
+<ul>
+<li><p>$A^T=A^{-1}$</p>
+</li>
+<li><p>$|A|=\pm1$</p>
+</li>
+</ul>
+<p>Q-R 分解：可逆实矩阵 $A=QR$，其中 $Q$ 是正交矩阵，$R$ 是主对角元素为正数的上三角矩阵</p>
+<p>Hadamard 不等式：$|\det A|\leq\Pi|\alpha_i|$</p>
+<hr>
+<h3 id="7-2"><a href="#7-2" class="headerlink" title="7.2"></a>7.2</h3><p>二次曲线的不变量：</p>
+<ul>
+<li><p>$I_1=a_{11}+a_{22}$</p>
+</li>
+<li><p>$I_2=\begin{vmatrix}a_{11}&amp;a_{12}\\a_{21}&amp;a_{22}\end{vmatrix}$</p>
+</li>
+<li><p>$I_3=\begin{vmatrix}a_{11}&amp;a_{12}&amp;a_1\\a_{12}&amp;a_{22}&amp;a_2\\a_1&amp;a_2&amp;a_0\end{vmatrix}$</p>
+</li>
+</ul>
+<p>可以用其判断二次曲线类型：</p>
+<ul>
+<li><p>椭圆 / 双曲线最简形：$b_{11}y_1^2+b_{22}y_2^2=0$</p>
+</li>
+<li><p>抛物线最简形：$b_{11}y_1^2+b_1y_1=0$</p>
+</li>
+</ul>
+<hr>
+<h3 id="7-3"><a href="#7-3" class="headerlink" title="7.3"></a>7.3</h3><p>矩阵相似：存在 $C^{-1}AC=B$，则称二者相似</p>
+<ul>
+<li><p>$C^{-1}A^{-1}C=B^{-1}$</p>
+</li>
+<li><p>$P^{-1}A^mP=B^m$</p>
+</li>
+<li><p>$P^{-1}f(A)P=f(B)$</p>
+</li>
+</ul>
+<hr>
+<h3 id="7-4"><a href="#7-4" class="headerlink" title="7.4"></a>7.4</h3><p>特征值：存在 $\lambda_0$（特征值）和 $X$（特征向量）满足 $AX=\lambda X$</p>
+<p>定理：特征多项式 $f(\lambda)=\lambda^n+b_1\lambda^{n-1}+…+b_k\lambda^{n-k}$，其中 $b_k$ 为全体 $k$ 阶主子式之和。</p>
+<ul>
+<li><p>$\sum\lambda_i\sum a_{ii}$</p>
+</li>
+<li><p>$\Pi\lambda_i=|A|$</p>
+</li>
+</ul>
+<p>若矩阵相似，则特征值相同（逆命题不成立）</p>
+<p>不同特征值的特征子空间间不重合</p>
+<hr>
+<h3 id="7-5"><a href="#7-5" class="headerlink" title="7.5"></a>7.5</h3><p>特征值重数大于等于其特征子空间的维数</p>
+<p>可对角化的充要条件：↑重数等于维数，且重数和等于 $n$</p>
+<p>求对角化的变换矩阵：$P=(X_{11}…,X_{1i},…,X_{mi},…)$，即所有特征子空间的基的组合</p>
+<p>约当块矩阵：$J=\begin{pmatrix}J_1\\&amp;J_2\\&amp;&amp;…&amp;\end{pmatrix}$，其中 $J_i=\begin{pmatrix}\lambda_1&amp;1\\&amp;\lambda_i&amp;1\\&amp;&amp;…&amp;\end{pmatrix}$</p>
+<ul>
+<li>其不与对角阵相似</li>
+</ul>
+<hr>
+<h3 id="7-7"><a href="#7-7" class="headerlink" title="7.7"></a>7.7</h3><p>矩阵相合：$C^TAC=B$</p>
+<hr>
+<h3 id="7-8"><a href="#7-8" class="headerlink" title="7.8"></a>7.8</h3><p>对于任意一个 $n$ 元二次型 $X^TAX$，都存在正交变换 $X=QY$，使得：</p>
+<ul>
+<li>$X^TAX=Y^T(Q^TAQ)Y=\sum\lambda_i y_i^2$</li>
+</ul>
+<p>求标准型变化矩阵：</p>
+<ul>
+<li><p>列出二次型对应矩阵</p>
+</li>
+<li><p>正交矩阵为基的组合</p>
+</li>
+</ul>
+<p>求标准型：</p>
+<ul>
+<li>初等变换法</li>
+<li>配方法 P258 例3</li>
+</ul>
+<p>相合标准型 -&gt; 相合规范性 -&gt; 正负惯性指数</p>
+<p>定理：$A$ 为实对称矩阵，$A,B$ 在实数范围内相合 充要条件为惯性指数相同</p>
+<hr>
+<h3 id="7-9"><a href="#7-9" class="headerlink" title="7.9"></a>7.9</h3><p>正定二次型：$f(x)=X^TAX(A^T=A)$ 如果满足 $f(x)\geq 0$，且仅 $f(0)=0$</p>
+<ul>
+<li>若仅 $f(x)\geq 0$，则为半正定二次型</li>
+<li>（半）负定二次型定义同理</li>
+<li>有正有负则为不定</li>
+</ul>
+<p>Gram正定矩阵 $A=(\alpha,\alpha)$</p>
+<p>对于 $n$ 阶实对称矩阵 $A$，下列命题等价：</p>
+<ul>
+<li>$X^TAX$ 为正定二次型（即 $A$ 是正定矩阵）</li>
+<li>$A$ 的正惯性指数为 $n$</li>
+<li>存在 $A=P^TP,|P|\not=0$</li>
+<li>$A$ 的 $n$ 个特征值都大于零</li>
+</ul>
+<p>顺序主子式</p>
+<p>定理：$A$ 正定 等价于 所有顺序主子式大于零<br>‘<br>‘</p>
+<hr>
+<h1 id="Terminology"><a href="#Terminology" class="headerlink" title="Terminology"></a><em>Terminology</em></h1><p>$R[x]_n$ 通常表示 $0$ 到 $n-1$ 次的集合</p>
+<p>笛卡尔积：$A\times B=\lbrace(a,b)|a\in A,b\in B\rbrace$</p>
+<hr>
+<p>(4.9)</p>
+<p>分块成对角形矩阵：</p>
+<p>$$<br>C=diag(C_1,…,C_n)=<br>\begin{pmatrix}<br>C_1 &amp; 0 &amp; … &amp; … &amp; 0\\<br>0 &amp; C_2 &amp; … \\<br>0 &amp; 0 &amp; … \\<br>… &amp; &amp; &amp; C_{n-1} \\<br>0 &amp; 0 &amp; … &amp; … &amp; C_n<br>\end{pmatrix}<br>$$</p>
+<hr>
+<p>（5.2）</p>
+<p>“对于相抵关系构成的等价类最简单的代表元为 $U_r$，于是集合 $M_{m\times n}(F)$ 关于 $\cong$ 的商集为：$\lbrace\overline{O},\overline{U_1},…,\overline{U_k},\rbrace$，其中 $k=min(m,n)$，$O$ 为零矩阵”</p>
+<ul>
+<li><p>$\overline{U_k}$ 代表秩为 $k$ 的矩阵的等价类</p>
+</li>
+<li><p>商集是根据等价关系划分出的不相关的若干等价类的集合</p>
+</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-11-04T06:00:00.000Z" title="2025/11/4 14:00:00">2025-11-04</time>发表</span><span class="level-item"><time dateTime="2026-01-14T03:27:25.190Z" title="2026/1/14 11:27:25">2026-01-14</time>更新</span><span class="level-item"><a class="link-muted" href="/project/categories/note/">note</a></span><span class="level-item">36 分钟读完 (大约5380个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/project/2025/11/04/ma/">数分笔记</a></p><div class="content"><h1 id="U1"><a href="#U1" class="headerlink" title="U1"></a><em>U1</em></h1><p>数集的稠密性</p>
+<p>三角形不等式：$|a|-|b|\leq|a\pm b|\leq|a|+|b|$</p>
+<p>确界原理：非空有界则有确界</p>
+<ul>
+<li>推广：任意非空数集必有（正常或不正常的）上下界</li>
+</ul>
+<hr>
+<h1 id="U2"><a href="#U2" class="headerlink" title="U2"></a><em>U2</em></h1><p>极限 eps-N 的定义</p>
+<p>无穷小数列：$\lim\limits_{n \to \infty} a_n = 0$（无穷大同理）</p>
+<p>收敛数列 / 函数极限的性质：</p>
+<ul>
+<li>（极限）唯一性</li>
+<li>有界性</li>
+<li>保号性</li>
+<li>保不等式性</li>
+<li>迫敛性</li>
+</ul>
+<hr>
+<p>单调有界定理：单调有界即有极限</p>
+<p>致密性定理：任何有界数列都有收敛子列</p>
+<p>柯西收敛准则：数列极限存在 $\Leftrightarrow \forall \varepsilon&gt;0,\exists N$，使得 $n,m\geq N$ 时，有 $|a_m-a_n|\leq\varepsilon$</p>
+<hr>
+<h1 id="U3"><a href="#U3" class="headerlink" title="U3"></a><em>U3</em></h1><p>归结原则：设 $f$ 在 $U^o(x_0,\delta)$ 上有定义，则 $\lim\limits_{x \to x_0} f(x)$ 存在的充要条件是任何含于 $U^o(x_o,\delta)$ 且以 $x_0$ 为极限的数列 ${x_n}$，都有 $\lim\limits_{n\to\infty}f(x_n)$ 都存在且相等。即：</p>
+<p>$$\lim\limits_{x\to x_0}f(x)=A\Leftrightarrow \forall x_n\to x_0(n\to\infty),\lim\limits_{n\to\infty}f(x_n)=A$$</p>
+<ul>
+<li>如果可以找到一个子列极限不存在，或者找到两个子列极限存在但不等，即可证明极限不存在。</li>
+</ul>
+<p>柯西准则：对于 $x\in U^o(x_0,\delta_0), \lim\limits_{x\to x_0}f(x)$ 存在 $\Leftrightarrow \forall \varepsilon&gt;0,\exists\delta(&lt;\delta_0)$，使得 $\forall x’,x’’\in U^o$，有 $|f(x’)-f(x’’)|&lt;\varepsilon$</p>
+<hr>
+<p>$\lim\limits_{n\to\infty}(1+\frac{1}{n})^n=e$</p>
+<p>$FT$：求 $\lim\limits_{n\to\infty}(1+\frac{1}{n}-\frac{1}{n^2})^n$</p>
+<ul>
+<li>原式 $=(1+\frac{n-1}{n^2})^{\frac{n^2}{n-1}-\frac{n}{n-1}}\geq(1+\frac{n-1}{n^2})^{\frac{n^2}{n-1}-2}$ 确定下界</li>
+</ul>
+<hr>
+<p>高阶无穷小量：$\lim\limits_{x\to x_0}\frac{f(x)}{g(x)}=0$，则 $f$ 为 $g$ 的高阶无穷小量，记作 $f(x)=o(g(x))$</p>
+<ul>
+<li>无穷小量：$f(x)=o(1)$</li>
+</ul>
+<p>同阶无穷小量：$\lim\limits_{x\to x_0}\frac{f(x)}{g(x)}=c\not=0$</p>
+<p>若 $\lim\limits_{x\to x_0}|\frac{f(x)}{g(x)}|\leq L$，则记 $f(x)=O(g(x))$</p>
+<ul>
+<li>若 $f(x)$ 在邻域有界，记 $f(x)=O(1)$</li>
+</ul>
+<p>等价无穷小量：$\lim\limits_{x\to x_0}\frac{f(x)}{g(x)}=1$，记 $f(x)\sim g(x)$</p>
+<ul>
+<li>$\arctan x\sim x,1-\cos x\sim x^2$</li>
+</ul>
+<hr>
+<h1 id="U4"><a href="#U4" class="headerlink" title="U4"></a><em>U4</em></h1><p>函数连续的定义：$\lim\limits_{x\to x_0}f(x)=f(x_0)$</p>
+<ul>
+<li>其等价于 $\forall\varepsilon&gt;0,\exists\delta&gt;0$，当 $|x-x_0|&lt;\delta$ 时，有 $|f(x)-f(x_0)|&lt;\varepsilon$（区分一致连续）</li>
+<li>也可以表示为 $\lim\limits_{x\to x_0}f(x)=f(\lim\limits_{x\to x_0}x)$</li>
+<li>$\lim\limits_{x\to x_0}g(f(x))=g(\lim\limits_{x\to x_0}f(x))=g(f(x_0))$</li>
+</ul>
+<p>连续函数闭区间有最值</p>
+<hr>
+<p>第一类间断点（两侧极限存在）</p>
+<ul>
+<li>可去间断点（两侧相等，但函数值不存在或不等）</li>
+<li>跳跃间断点（两侧极限不等）</li>
+</ul>
+<p>第二类间断点（有一侧极限不存在）</p>
+<ul>
+<li>无穷间断点</li>
+<li>震荡间断点</li>
+</ul>
+<hr>
+<p>一致连续：$\forall\varepsilon&gt;0,\exists\delta&gt;0$，使得对于 $\forall x’,x’’\in I$，只要 $|x’-x’’|&lt;\delta$，则有 $|f(x’)-f(x’’)|&lt;\varepsilon$ 成立</p>
+<ul>
+<li>一致连续定理：闭区间连续，则一致连续</li>
+</ul>
+<hr>
+<h1 id="U5"><a href="#U5" class="headerlink" title="U5"></a><em>U5</em></h1><p>$f’(x_0)=\lim\limits_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}=\lim\limits_{\Delta x\to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}$</p>
+<ul>
+<li>可导 $\Rightarrow$ 连续</li>
+<li>$f’(x)$ 也可写作 $y’|<em>{x=x_0}$ 或 $\frac{dy}{dx}|</em>{x=x_0}$</li>
+</ul>
+<hr>
+<p>函数连续且严格单调，则反函数连续。</p>
+<p>反函数的导数：设 $y=f(x)$ 为 $x=\varphi(y)$ 的反函数，若 $\varphi$ 在 $y_0$ 满足连续，严格单调且 $\varphi(y_0)\not=0$，则 $f=\varphi^{-1}$ 在 $x_0=\varphi(y_0)$ 可导，且 $f’(x)=\frac{1}{\varphi’(y)}$</p>
+<ul>
+<li>$\frac{\Delta y}{\Delta x}=\frac{1}{\frac{\Delta x}{\Delta y}}$</li>
+</ul>
+<hr>
+<p>莱布尼茨公式：$(uv)^{(n)}=\sum C_{n}^{k}u^kv^{n-k}$</p>
+<hr>
+<h3 id="5-5"><a href="#5-5" class="headerlink" title="5.5"></a>5.5</h3><p>可微：$\Delta y=f(x_0+\Delta x) - f(x_0)$，且存在 $\Delta y=A\Delta x+o(\Delta x)$</p>
+<ul>
+<li>$A\Delta x$ 称为微分，可记作 $dy|_{x=x_0}$</li>
+</ul>
+<hr>
+<h1 id="U6"><a href="#U6" class="headerlink" title="U6"></a><em>U6</em></h1><h2 id="6-1"><a href="#6-1" class="headerlink" title="6.1"></a>6.1</h2><p>极大 / 小值点根据邻域内最大 / 小定义</p>
+<p>费马定理：若函数极值点可导，则导数为 $0$</p>
+<hr>
+<p>罗尔（中值）定理：</p>
+<p>$$<br>\begin{cases}<br>f(x) \text{ 在 } [a,b] \text{ 上连续} \\<br>f(x) \text{ 在 } (a,b) \text{ 上可导} \\<br>f(a) = f(b)<br>\end{cases}<br>\Rightarrow \exists \xi \in (a,b), f’(\xi) = 0<br>$$</p>
+<p>分析：</p>
+<ul>
+<li><p>易知函数在区间内有最值</p>
+<ul>
+<li><p>若 $M = m$，则为常函数</p>
+</li>
+<li><p>若 $M \not= m$，由于 $f(a) = f(b)$，端点最多只能取 $M$ 或 $m$ 之一，则开区间内一定存在最值点</p>
+</li>
+</ul>
+</li>
+<li><p>若函数不全可导，$f(x) = |x|$ 即为反例</p>
+</li>
+</ul>
+<hr>
+<p>拉格朗日中值定理：</p>
+<p>$$<br>\begin{cases}<br>f(x) \text{ 在 } [a,b] \text{ 上连续} \\<br>f(x) \text{ 在 } (a,b) \text{ 上可导}<br>\end{cases}<br>\Rightarrow \exists \xi \in (a,b), f’(\xi) = \frac{f(b) - f(a)}{b - a}<br>$$</p>
+<p>分析：</p>
+<ul>
+<li><p>令 $g(x) = f(a) + \frac{f(b) - f(a)}{b - a}(x - a),\space F(x) = f(x) - g(x)$</p>
+</li>
+<li><p>罗尔定理对于 $F(x)$ 适用，使得 $F’(\xi) = 0$，即 $f’(\xi) = g’(\xi)$ 得证</p>
+</li>
+</ul>
+<p>$f’(\xi) = \frac{f(b) - f(a)}{b - a}$ 为拉格朗日公式，有以下等价形式：</p>
+<ul>
+<li><p>$f(b) - f(a) = f’(\xi)(b - a)$</p>
+</li>
+<li><p>$f(b) - f(a) = f’(a + \theta(b - a))(b - a),\space \theta \in (0,1)$</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">---T1.insert()</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>导数极限定理：函数在 $U(x_0,\delta_0)$ 连续，$U^o(x_0,\delta_0)$ 可导，且 $\lim\limits_{x\to x_0}f’(x)$ 存在，则极限为 $f’(x_0)$。</p>
+<p>分析：（证明 $f_+’ = f_-‘ = f’$）</p>
+<ul>
+<li><p>$f_+’ = \lim\limits_{x \to x_0^+} \frac{f(x) - f(x_0)}{x - x_0}$，对 $[x_0,x]$ 运用 $L-$中值定理使其 $=f’(\xi_x)$</p>
+</li>
+<li><p>$x \to x_0，\xi_x \to x_0$，所以极限得证</p>
+<ul>
+<li>解释：复合函数求极限 / 定义证明</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">---T2.insert()</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>定理：函数在区间可导，则</p>
+<ul>
+<li><p>区间单增 $\iff f’(x)\geq 0$</p>
+</li>
+<li><p>区间严格单增 $\iff (1)f’(x)\geq0 \space\space\space (2)$ 任何子区间中 $f’(x) \not\equiv 0$（后者正推反证则为常函数，不成立）</p>
+<ul>
+<li>反推：前者知单增，后者反证不严格单增不成立</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="following-tests"><a href="#following-tests" class="headerlink" title="following tests"></a><em>following tests</em></h3><ul>
+<li><p>$T1.$ 证明对于 $x&gt;-1$ 且 $x\not=0,\space \frac{x}{1+x}&lt;ln(1+x)&lt;x$。分析：</p>
+<ul>
+<li><p>令 $f(x) = lnx$</p>
+</li>
+<li><p>运用中值定理得到 $f(1+x) - f(1) = f’(1 + \theta x) * x$</p>
+</li>
+<li><p>注意到 $f’(x) = \frac{1}{x}$，则 $ln(1 + x) - ln1 = \frac{x}{1+\theta x}$，结合 $\theta \in (0,1)$ 得证。</p>
+</li>
+</ul>
+</li>
+<li><p>$T2.$ 求分段函数的导数：</p>
+</li>
+</ul>
+<p>$$<br>f(x) = \begin{cases}<br>x + sin(x^2) &amp; x \leq 0 \\<br>ln(1 + x) &amp; x &gt; 0<br>\end{cases}<br>$$</p>
+<hr>
+<p>达布定理（导函数介值定理）：若 $f(x)$ 在 $[a,b]$ 上可导，且 $f_+’(a)\not=f_-‘(b)$，对于 $\forall k\in(f_+^{‘}(a),f_-^{‘}(b)),\exists\xi\in(a,b),f’(\xi)=k$</p>
+<ul>
+<li><p>令 $F(x)=f(x)-\lambda x$，则 $F_+^{‘}(a)F_-^{‘}(b)&lt;0$，不妨令 $F_+^{‘}(a)&gt;0$（上凸）</p>
+</li>
+<li><p>从而 $\exists\delta\in(0,\frac{b-a}{2})$，使得 $x’\in(a,a+\delta),F(x’)&gt;F(a),x’’\in(b-\delta,b),F(x’’)&gt;F(b)$</p>
+</li>
+<li><p>结合 $F(x)$ 连续知开区间内存在最大值点，再结合 <strong>费马定理</strong> 知 $F’(x)=0$。得证。</p>
+</li>
+</ul>
+<hr>
+<p>$FT$：证 $|\arctan x-\arctan y|\leq|x-y|$</p>
+<ul>
+<li><p>令 $f(x)=\arctan x$，则 $f’(x)=\frac{1}{1+x^2}$</p>
+</li>
+<li><p>$x\not=y$ 时，由 L-中值定理，$\exist\xi\in(x,y),\arctan x-\arctan y=f’(\xi)(x-y)$</p>
+</li>
+</ul>
+<p>$FT2$：证明 </p>
+<p>$$<br>\arctan\frac{1+x}{1-x} - \arctan x=<br>\begin{cases}<br>\frac{\pi}{4} &amp; x&lt;1 \\<br>-\frac{3}{4}\pi &amp; x&gt;1<br>\end{cases}<br>$$</p>
+<hr>
+<h2 id="6-2"><a href="#6-2" class="headerlink" title="6.2"></a>6.2</h2><p>柯西中值定理：（曲线参数方程上 L-中值定理的推广）</p>
+<p>若 $f，g$ 满足</p>
+<ul>
+<li>闭区间连续</li>
+<li>开区间可导</li>
+<li>导函数不同时取 $0$</li>
+<li>$g(a)\not=g(b)$</li>
+</ul>
+<p>则 $\exists\xi\in(a,b),\frac{f’(\xi)}{g(\xi)} = \frac{f(b) - f(a)}{g(b) - g(a)}$</p>
+<ul>
+<li>辅助函数罗尔定理证明</li>
+</ul>
+<p>例一略</p>
+<p>例二：导函数有界-&gt;一致连续（充分）</p>
+<ul>
+<li>limf(x)/x^(-1/2)=A<ul>
+<li>2(\sqrtx)’=x^(-1/2)</li>
+</ul>
+</li>
+<li>\exists \xi\in(0,1),|lim式|\leq|A|+1</li>
+<li>g(x)=2\sqrtx,取x1,x2&lt;\xi，针对x1x2和fg柯西中值定理<pre><code>  |f(x)|
+</code></pre>
+艹写不下去了（图×3<br>一致连续与柯西中值定理的联系……</li>
+</ul>
+<hr>
+<p>洛必达法则~~~证明</p>
+<ul>
+<li>若都趋近于0，由于极限值与该点函数值无关，不妨令f(a)=g(a)=0</li>
+<li>验证a到a+\delta_0条件成立，运用柯西中值定理<ul>
+<li>取该小区间内的x,K-Z式=f(x)/g(x)<br>写不下去的证明图x3</li>
+</ul>
+</li>
+</ul>
+<p>FT：已知 $\lim\limits_{x\to 0^{+}} xlnx=0$，求：</p>
+<ul>
+<li><p>$\lim\limits_{x\to 0^{+}} x^x$</p>
+</li>
+<li><p>$\ln^x \frac{1}{x}$</p>
+</li>
+<li><p>$sinx^{tanx},x\to\frac{\pi}{2}$</p>
+</li>
+<li><p>$\frac{\sqrt x}{1-e^{\sqrt x}},\to 0^+$</p>
+</li>
+</ul>
+<p>FT2：$\lim\limits_{x\to\infty}\frac{x+\cos x}{x}$</p>
+<ul>
+<li>洛必达求出极限不存在，不代表原式极限不存在</li>
+</ul>
+<p>FT3：设 $x=0,f(x)=0$而 $x\not=0,f(x)=g(x)/x$，且已知 $g(0)=g’(0)=0,g’’(0)=3$，求 $f’(0)$</p>
+<ul>
+<li><p>$f’(0) = \frac{f(x) - f(0)}{x}=g(x)/x^2=g’(x)/2x=?g’’(x)/2$ ？？？</p>
+<ul>
+<li>二阶导存在，可以推出g在邻域可导，且g’连续，但不能得到g’’在邻域存在</li>
+</ul>
+</li>
+<li><p>应该是 $g’(x)/2x = 1/2 \frac{g’(x) - g’(0)}{x} = 1/2g’(0) = 3/2$</p>
+</li>
+</ul>
+<p>FT3：求极限 $(1+1/n+1/n^2)^n,\to\infty$</p>
+<ul>
+<li><p>取ln，令t=1/x</p>
+</li>
+<li><p>利用归结原则……</p>
+</li>
+</ul>
+<hr>
+<p>泰勒(Taylor)多项式：$T_n(x) = f(x_0)+\frac{f’(x_0)}{1!}(x-x_0)^1+…+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n)$</p>
+<ul>
+<li>佩亚诺余项：$o((x-x_0)^n)=f(x)-T_n(x)$</li>
+</ul>
+<p>注 $1$：已知 $P_n(x)$ 是一个 $n$ 次多项式，满足 $f(x)=P_n(x)+o((x-x_0)^n)$，但 $P_n$ 不一定是 $f$ 的 $n$ 次泰勒多项式，例如：</p>
+<ul>
+<li><p>$f(x)=x^{n+1}D(x)$，只有 $f’(0)=0$ 一处导数存在，无法构造出高于一次的 $T_n$。</p>
+</li>
+<li><p>但又有 $\lim\limits_{x\to0}\frac{f(x)}{x^n}=\lim\limits_{x\to0} xD(x)=0$，即 $f(x)=o(x^n)$，只需要取 $P_n(x)=0 +0\times…$ 即可满足伪式。</p>
+</li>
+</ul>
+<p>麦克劳林公式：$f(x)=f(0)+f’(0)x+f’’(0)x^2+…o(x^n)$</p>
+<hr>
+<p>泰勒定理：若 $f$ 在 $[a,b]$ 上有 $n$ 次连续导函数，在 $(a,b)$ 中存在 $n+1$ 阶导数，则对于 $\forall x,x_0\in[a,b]$，存在 $\xi\in(a,b)$，使得 $f(x)=T_n(x)+\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}$</p>
+<p>拉格朗日余项：</p>
+<p>$$R_n(x)=f(x)-$$</p>
+<hr>
+<p>第三充分条件不必要</p>
+<p>$\lim e^{-1/x^2}P_n(1/x)$ 问题</p>
+<hr>
+<h3 id="6-5"><a href="#6-5" class="headerlink" title="6.5"></a>6.5</h3><p>（下）凸函数：$\forall x_1\not=x_2,\lambda\in(0,1),f(\lambda x_1+(1-\lambda)x_2)\leq \lambda f(x_1)+(1-\lambda)f(x_2)$</p>
+<ul>
+<li><p>充要条件：$\forall x_1&lt;x_2&lt;x_3,\frac{f(x_2)-f(x_1)}{x_2-x_1}\leq\frac{f(x_3)-f(x_2)}{x_3-x_2}$</p>
+<ul>
+<li>证明：QwQ</li>
+</ul>
+</li>
+</ul>
+<p>下面三命题等价：</p>
+<ul>
+<li><p>$f(x)$ 为凸函数</p>
+</li>
+<li><p>$f’(x)$ 为增函数</p>
+</li>
+<li><p>$\forall x_1,x_2,f(x_2)\geq f(x_1)+f’(x_1)(x_2-x_1)$</p>
+</li>
+</ul>
+<hr>
+<p>$1/p+1/q=1$ 为正数，$ab\leq1/p\times a^p+1/q\times b^q$</p>
+<ul>
+<li>$ln()\geq lna+lnb=1/p\times lna^p+1/q\times lnb^q$</li>
+</ul>
+<hr>
+<p>jensen不等式：$\sum\lambda=1,f(\sum\lambda x)\leq\sum\lambda f(x)$</p>
+<hr>
+<h1 id="U7"><a href="#U7" class="headerlink" title="U7"></a><em>U7</em></h1><h3 id="7-1"><a href="#7-1" class="headerlink" title="7.1"></a>7.1</h3><p>（闭）区间套：${[a_n,b_n]}$ 满足</p>
+<ul>
+<li>$[a_n,b_n]\supset[a_{n+1},b_{n+1}]$</li>
+<li>$\lim\limits_{n\to\infty}(b_n-a_n)=0$</li>
+</ul>
+<p>区间套定理：存在唯一 $\xi$ 满足 $a_n\leq\xi\leq b_n$</p>
+<ul>
+<li>$\forall \varepsilon&gt;0,\exists N$ 使得 $n&gt;N,[a,b]\subset U(\xi,\varepsilon)$</li>
+</ul>
+<hr>
+<p>聚点：无论是否属于点集 $S$ 的定点 $\xi$，若其任意邻域都含有 $S$ 中的无穷个点，则称 $\xi$ 为点集 $S$ 的一个聚点。</p>
+<p>等价命题：</p>
+<ul>
+<li>$\forall\varepsilon&gt;0,U^o(\xi,\varepsilon)\cup S\not=\emptyset$</li>
+<li>存在各项互异的收敛数列 ${x_n}\subset S$，使得 $\lim x_n=\xi$</li>
+</ul>
+<p>聚点定理：任何一个有界无限点集至少有一个聚点</p>
+<hr>
+<p>无限（有限）开覆盖：$H$ 是无限（有限）个开区间的集合，若 $S$ 中任意元素都包含在 $H$ 的某一区间内，则称 $H$ 为 $S$ 的无限（有限）开覆盖</p>
+<p>确界-单调有界-区间套-有限覆盖-聚点-致密性-柯西收敛准则-确界<br>（承认阿基米德性质的前提下）</p>
+<hr>
+<h1 id="U8"><a href="#U8" class="headerlink" title="U8"></a><em>U8</em></h1><h3 id="8-1"><a href="#8-1" class="headerlink" title="8.1"></a>8.1</h3><p>不定积分：原函数的集合，记作 $\int f(x)dx$</p>
+<ul>
+<li>$\int f(x)dx=F(x)+C$</li>
+</ul>
+<p>若 $f$ 在区间 $I$ 连续，则存在原函数（U9）</p>
+<p>第一类间断点没有原函数，第二类可以有</p>
+<hr>
+<p>$\int \sec x\tan x dx=\sec x+C$</p>
+<p>$\int \csc x\cot xdx=-\csc x+C$</p>
+<p>$\int \frac{dx}{\sqrt{1-x^2}}=\arcsin x+C=-\arccos x+C$</p>
+<p>$\int \frac{dx}{1+x^2}=\arctan x+C=-arccot x + C$</p>
+<hr>
+<h3 id="8-2"><a href="#8-2" class="headerlink" title="8.2"></a>8.2</h3><p>第一换元积分法：复合函数</p>
+<ul>
+<li>$\int g’(f(x))f’(x)dx=\int g’(f(x))df(x)=g(f(x))+C$</li>
+</ul>
+<p>$FT:\int \frac{dx}{\sqrt{x}(1+x)}=\frac{du}{1+u^2}$</p>
+<p>第二换元积分法：$\int f’(g(x))g’(x)dx=\int h(x)dx=H(x)+C$ 存在，则 $\int f(x)dx=H(g^{-1}(x))+C$</p>
+<p>分部积分法</p>
+<p>T:$\int\sqrt{x^2+a^2}dx$ 或者减</p>
+<p>$\int\frac{dx}{(x^2+a^2)^n}$</p>
+<ul>
+<li>直求与递推</li>
+</ul>
+<hr>
+<h3 id="8-3"><a href="#8-3" class="headerlink" title="8.3"></a>8.3</h3><p>有理函数的不定积分：</p>
+<p>$R(u(x),v(x))$：由 $u(x),v(x)$ 和常数经过有限次四则运算得到的函数，称为 $u(x),v(x)$ 的有理式</p>
+<ul>
+<li>对于 $\int R(\sin x,\cos x)dx$，常令 $t=\tan\frac{x}{2}$，转化为关于 $t$ 的有理式。</li>
+</ul>
+<p>一般的，对于 $\int\frac{\alpha f(x)+\beta g(x)}{\lambda f(x)+\mu g(x)}$，且 $f,g$ 求导后互换，可将分子化为分母与分母导数的线性组合（如 $\sin,\cos$）</p>
+<hr>
+<p>无理根式的不定积分：</p>
+<ul>
+<li><p>对于 $R(x,\sqrt[n]{\frac{ax+b}{cx+d}})$，其中 $ad-bc\not=0$，令 $t=\sqrt[n]{\frac{ax+b}{cx+d}}$</p>
+</li>
+<li><p>对于 $R(x,\sqrt{ax^2+bx+c})$，令 $u=x+\frac{b}{2a},k^2=|\frac{4ac-b^2}{4a}|$，则 $\sqrt{ax^2+bx+c}$ 一定属于如下之一：</p>
+<ul>
+<li>$|a|(u^2+k^2)$：令 $u=k\tan t$</li>
+<li>$|a|(u^2-k^2)$：令 $u=k\sec t$</li>
+<li>$|a|(k^2-u^2)$：令 $u=k\sin t$<ul>
+<li>也可以令 $\sqrt{ax^2+bx+c}=\sqrt{a}\times x+t$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="U9"><a href="#U9" class="headerlink" title="U9"></a><em>U9</em></h1><h3 id="9-1"><a href="#9-1" class="headerlink" title="9.1"></a>9.1</h3><p>积分和 / 黎曼和：$\sum f(\xi_i)\Delta x_i$</p>
+<p>若 $||T||&lt;\delta$，有 $|\sum f(\xi_i)\Delta x_i-J|&lt;\varepsilon$，则称可积 / 黎曼可积，其中 $J$ 为定积分 / 黎曼积分。记作 $J=\int^b_af(x)dx=\lim\limits_{||T||\to0}\sum f(\xi_i)\Delta x_i$</p>
+<hr>
+<h3 id="9-2"><a href="#9-2" class="headerlink" title="9.2"></a>9.2</h3><p>（牛顿-莱布尼茨）N-L  ii公式：$\int_a^{b}f(x)dx=F(b)-F(a)=F(x)\big|^b_a$</p>
+<hr>
+<h3 id="9-3"><a href="#9-3" class="headerlink" title="9.3"></a>9.3</h3><p>令 $M_i=\sup\limits_{x\in\Delta x_i} f(x),m_i=\inf\limits_{x\in\Delta x_i}f(x)$</p>
+<p>达布上和：$U(T,f)=\sum M_i\Delta x_i$，简记为 $U(T)$</p>
+<p>达布下和：$L(T,f)=\sum m_i\Delta x_i$，简记为 $L(T)$</p>
+<ul>
+<li>$U(T)=\sup$ 黎曼和，$L(T)=\inf$ 黎曼和</li>
+</ul>
+<hr>
+<p>可积的第一充要条件：$\inf U(T)=\sup L(T)$</p>
+<ul>
+<li>第二：$\forall\varepsilon&gt;0,\exist U(T)-L(T)&lt;\varepsilon$</li>
+</ul>
+<hr>
+<p>函数闭区间连续则可积</p>
+<ul>
+<li>连续 -&gt; 一致连续 -&gt; 振幅满足</li>
+</ul>
+<p>闭区间单调则可积</p>
+<p>闭区间有界，且只有有限个间断点则可积</p>
+<ul>
+<li>设 $f$ 的间断点为 $p_i\in[u_i,v_i],v_i-u_i&lt;\frac{\varepsilon}{k}$</li>
+<li>记 $a=v_0,b=u_{k+1}$，则 $f$ 在 $[v_i,u_{i+1}]$ （一致）连续</li>
+<li>据此做分割 $T$：<ul>
+<li>$(u_i,v_i)\cap T=\empty$</li>
+<li>若 $x_{i-1}\not\in{u_i}$，则 $x_i-x_{i-1}&lt;\delta$</li>
+<li>则 $\sum \omega_i\Delta x_i\leq\varepsilon(b-a)+2M^*k\times{\varepsilon}{k}$</li>
+</ul>
+</li>
+</ul>
+<p>T. 证明黎曼函数 $[0,1]$ 可积</p>
+<hr>
+<p>微积分基本定理：若 $f$ 在闭区间可积，且 $F’(x)=f(x)$，则 $\int_a^bf(x)dx=F(b)-F(a)=F(x)\big|_a^b$</p>
+<ul>
+<li>定义：黎曼和 $-J&lt;\varepsilon$</li>
+<li>L-中值定理：$F(x_i)-F(x_{i-1})=f(\xi_i)\Delta x_i$</li>
+<li>$F(b)-F(a)=\sum F(x_i)-F(x_{i-1})$</li>
+</ul>
+<p>注1：条件可降级为 $F$ 闭区间连续，$F’(x)=f(x)$<br>注2：可进一步降低为 $F$ 闭区间连续，除去有限个点之外都有 $F’(x)=f(x)$</p>
+<ul>
+<li>分割时把坏点放到分割点里去，运用 L-</li>
+</ul>
+<hr>
+<p>T. $J=\lim\limits_{n\to\infty}\frac{1}{n+1}+…+\frac{1}{2n}$</p>
+<ul>
+<li>$\frac{1}{n+i}=\frac{1}{1+\frac{i}{n}}\times\frac{1}{n}$</li>
+<li>该式是 $f(x)=\frac{1}{1+x}$ 在 $[0,1]$ 上的一个积分和</li>
+<li>原式 $=\int_0^1\frac{1}{1+x}dx$</li>
+</ul>
+<p>闭区间：可积与存在原函数无关</p>
+<hr>
+<h3 id="9-4"><a href="#9-4" class="headerlink" title="9.4"></a>9.4</h3><p>定积分的线性性：$\int k_1f(x)+k_2g(x)=k_1\int f(x)+k_2\int g(x)$</p>
+<p>若 $f,g$ 可积，则 $f\cdot g$ 也可积</p>
+<ul>
+<li>$|f(x)g(x)-f(y)g(y)|$</li>
+<li>$\leq|f(x)g(x)-f(x)g(y)|+|f(x)g(y)-f(y)g(y)|$</li>
+<li>$\leq M_f|g(x)-g(y)|+M_g|f(x)-f(y)|$</li>
+<li>$\leq M(\omega_f+\omega_g)$</li>
+<li>即 $\omega_{fg}\leq M(\omega_f+\omega_g)$</li>
+</ul>
+<p>一些误区：</p>
+<ul>
+<li>$\int f(x)g(x)dx\not=\int f(x)dx\times \int g(x)dx$</li>
+<li>$f$ 可积，$\frac{1}{f}$ 不一定可积</li>
+</ul>
+<p>积分区间可加性：$\int_a^c=\int_a^b+\int_b^c$</p>
+<ul>
+<li>将 $b$ 设为介点</li>
+</ul>
+<hr>
+<p>积分第一中值定理：$\exists\xi\in[a,b],\int_a^bf(x)dx=f(\xi)(b-a)$</p>
+<ul>
+<li>可 $\xi\in(a,b)$</li>
+</ul>
+<p>推广：若 $g$ 不变号，则有 $\int_a^bf(x)g(x)dx=f(\xi)\int_a^bg(x)dx$</p>
+<hr>
+<h3 id="9-5"><a href="#9-5" class="headerlink" title="9.5"></a>9.5</h3><p>变上限积分：$\phi(x)=\int_a^xf(t)dt,x\in(a,b]$</p>
+<p>变下限积分：$\int_x^bf(t)dt,x\in[a,b)$</p>
+<ul>
+<li>性质：若 $f$ 在 $[a,b]$ 可积，则 $\phi$ 在 $[a,b]$ 上连续</li>
+</ul>
+<hr>
+<p>原函数存在定理：$f$ 在 $[a,b]$ 连续，则 $\phi(x)=\int_a^xf(t)dt$ 在 $[a,b]$ 上可导，且 $\phi’(x)=f(x)$</p>
+<ul>
+<li><p>下证 $\lim\frac{\Delta\phi}{\Delta x}=f(x)$</p>
+</li>
+<li><p>用积分第一中值定理即可</p>
+</li>
+</ul>
+<p>FT：$F(x)=\int_0^{x^2}f(t)dt$</p>
+<ul>
+<li>令 $G(x)=\int_0^xf(t)dt$，则 $F’(x)=(G(x^2))’$</li>
+</ul>
+<p>FT2：$F(x)=\int_a^xf(t)(x-t)dt$，证明 $F’’(x)=f(x)$</p>
+<ul>
+<li>$F’(x)=x\int f(t)dt-\int tf(t)dt$</li>
+<li>$F’’(x)=\dots$</li>
+</ul>
+<hr>
+<p>换元积分法：$\int_{\phi(\alpha)}^{\phi(\beta)}f(x)dx=\int_\alpha^\beta f(\phi(t))\phi’(t)dt$</p>
+<p>FT：$\int_0^1\frac{\ln(1+x)}{1+x^2}dx$</p>
+<ul>
+<li>令 $x=\tan t,\int_0^{\frac{\pi}{4}}\ln(1+\tan t)$</li>
+<li>$=\int_0^{\frac{\pi}{4}}\ln(\frac{\sqrt2\cos(t-\frac{\pi}{4})}{\cos t})dt$ 拆分</li>
+</ul>
+<p>FT2：$\int_0^\frac{\pi}{2}\frac{\sin^2x}{\sin x+\cos x}dx$</p>
+<ul>
+<li><p>令 $x=\frac{\pi}{2}-t,=\int_0^\frac{\pi}{2}\frac{\cos^2x}{\sin x+\cos x}dx$</p>
+</li>
+<li><p>于是原式 $=\frac{1}{2}\int_0^\frac{\pi}{2}\frac{1}{\sin x+\cos x=\sqrt2\cos(x-\frac{\pi}{4})}dx$</p>
+</li>
+</ul>
+<p>FT3：$\int_0^1tf(2x-t)dt=\frac{1}{2}\arctan(x^2),f(1)=1$，求 $\int_1^2f(t)dt$</p>
+<ul>
+<li>令 $u=2x-t$，左式 $=\int_{2x-1}^{2x}(2x-u)f(u)du$</li>
+<li>等式两边求导，利用 $F=\int_{a(x)}^{b(x)} f(u)du$，则 $F’=f’(b(x))b’(x)-a\dots$</li>
+</ul>
+<hr>
+<p>分部积分法：$\int_a^bu(x)v’(x)dx=u(x)v(x)\big|_a^b-\int_a^bu’(x)v(x)dx$</p>
+<ul>
+<li>也可作 $-\int_a^bv(x)du(x)$</li>
+</ul>
+<p>FT：求 $\int_0^{\frac{\pi}{2}}\sin^nxdx$</p>
+<ul>
+<li>拆成 $\sin x$ 与 $\sin^{n-1}x$</li>
+<li>$J_{2m}=\frac{(2m-1)!!}{(2m)!!}\cdot\frac{\pi}{2},J_{2m+1}=\frac{(2m)!!}{(2m+1)!!}$</li>
+<li>注意到 $J_{2m+1}&lt;J_{2m}&lt;J_{2m-1}$，进一步推导……</li>
+</ul>
+<hr>
+<p>泰勒多项式的积分形式：</p>
+<p>$f(x)=f(x_0)+\int_{x_0}^xf’(t)dt$</p>
+<ul>
+<li>$=f(x_0)-\int_{x_0}^xf’(t)d(x-t)$</li>
+<li>$=f(x_0)-(x-t)f’(t)\big|<em>{x_0}^x+\int</em>{x_0}^x(x-t)f’’(t)dt$</li>
+<li>$=f(x_0)+(x-x_0)f’(x_0)-\frac{1}{2}\int_{x_0}^xf’’(t)d((x-t)^2)$</li>
+<li>$=T_n(x)+\frac{1}{n!}\int_{x_0}^xf^{(n+1)}(t)(x-t)^ndt$ 即泰勒多项式的积分型余项</li>
+</ul>
+<hr>
+<p>积分第二中值定理：$f$ 可积， $g$ 单调，则存在</p>
+<p>$\int_a^bf(x)g(x)dx=g(a)\int_a^\xi f(x)dx+g(b)\int_\xi^bf(x)dx$</p>
+<ul>
+<li>利用积分第一中值定理</li>
+</ul>
+<p>引理：$f$ 可积，$g$ 单减且非负，则存在 $\int_a^bf(x)g(x)dx=g(a)\int_a^\xi f(x)dx$（单增则 $g(b)\int_\xi^bf(x)dx$）</p>
+<hr>
+<h3 id="9-6"><a href="#9-6" class="headerlink" title="9.6"></a>9.6</h3><p>证明无界不可积：取？</p>
+<hr>
+<h1 id="U10"><a href="#U10" class="headerlink" title="U10"></a><em>U10</em></h1><h3 id="10-1"><a href="#10-1" class="headerlink" title="10.1"></a>10.1</h3><p>对于 $x=x(t),y=y(t)$，其中 $x(t)$ 连续，$x’(t)\not=0$（导函数的介值性：恒大于 / 小于 $0$），$y(t)$ 连续可微（导函数连续）</p>
+<ul>
+<li>近似面积为 $\sum y(\xi_i)(x(t_i)-x(t_{i-1}))$</li>
+<li>$=\sum y(\xi_i)x’(\lambda_i)\Delta t_i=\sum y(\xi_i)x’(\xi_i)\Delta t_i$<ul>
+<li>需证 $|\sum y(\xi_i)(x’(\lambda_i)-x’(\xi_i))\Delta t_i|\rightarrow 0$</li>
+<li>解释：$\lambda$ 是定值，黎曼和的形式要求为 $\xi$ 任意值。</li>
+</ul>
+</li>
+<li>$=\int y(t)x’(t)dt$</li>
+</ul>
+<p>对于封闭的参数方程，即 $x(\alpha)=x(\beta),y(\alpha)=y(\beta)$，将其分为上（下）半部分和分隔点 $\gamma$，要求：</p>
+<ul>
+<li><p>$[\alpha,\gamma]$ 的上半部分，$y(t)$ 连续，$x(t)$ 连续可微，$x’(t)&gt;0$</p>
+</li>
+<li><p>$[\gamma,\beta]$ 的下半部分，$y(t)$ 连续，$x(t)$ 连续可微，$x’(t)&lt;0$</p>
+</li>
+<li><p>$C_1$ 在 $C_2$ 上方</p>
+</li>
+<li><p>计算略，最终 $S=|\int y(t)x’(t)dt|$</p>
+</li>
+</ul>
+<p>FT：求椭圆 $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$ 的面积</p>
+<ul>
+<li>参数方程为 $x=a\cos t,y=b\sin t$</li>
+</ul>
+<p>对于极坐标系：$\rho=\rho(\theta)$</p>
+<ul>
+<li>小曲边扇形面积约等于 $\frac{1}{2}\rho^2(\xi_i)\Delta\theta_i$</li>
+<li>$S=\frac{1}{2}\int_\alpha^\beta\rho^2(\theta)\text{d}\theta$</li>
+</ul>
+<hr>
+<p>求平面曲线的弧长</p>
+<p>定理：若有参数方程满足 $x(t),y(t)$ 连续可微，则 $C$ 是可求长的。</p>
+<p>用折线段长度刻画：$l_T=\sum\sqrt{\dots}$，则需 $\lim\limits_{||T||\to0}l_T$ 存在。</p>
+<ul>
+<li>$l_T=\sum\sqrt{(x’(\tau_i)\Delta t_i)^2+(y’(\xi_i)\Delta t_i)^2}$</li>
+<li>$\to\int_\alpha^\beta\sqrt{(x’(t))^2+(y’(t))^2}\text{d}t$</li>
+</ul>
+<p>光滑曲线：$x,y$ 连续可微，任意点 $(x’(t))^2+(y’(t))^2\not=0$</p>
+<p>通式：</p>
+<ul>
+<li>普通函数：$\int\sqrt{1+(f’(x))^2}dx$</li>
+<li>极坐标方程：$\int\sqrt{(\rho’(\theta))^2+(\rho(\theta))^2}$</li>
+</ul>
+<hr>
+<h3 id="10-2"><a href="#10-2" class="headerlink" title="10.2"></a>10.2</h3><p>旋转体的体积：$\pi\int_a^b f^2(x)dx$</p>
+<p>参数方程：$\int y(t)dx=\int y(t)x’(t)dt$</p>
+<p>极坐标方程：$$</p>
+<hr>
+<h3 id="10-3"><a href="#10-3" class="headerlink" title="10.3"></a>10.3</h3><p>曲率：$\lim|\frac{\Delta\phi}{\Delta s}|=\frac{\text{d}\phi}{\text{d}s}$，即切线角增量比弧长增量</p>
+<ul>
+<li><p>$s(u)=\int_a^b \sqrt{(x’(u))^2+(y’(u))^2}\text{d}u,s’(u)=\sqrt{\dots}$</p>
+</li>
+<li><p>$\tan\phi=\frac{y’(t)}{x’(t)}$</p>
+</li>
+</ul>
+<hr>
+<h1 id="U11"><a href="#U11" class="headerlink" title="U11"></a><em>U11</em></h1><h3 id="11-1"><a href="#11-1" class="headerlink" title="11.1"></a>11.1</h3><p>反常积分：$\lim\limits_{u\to\infty}\int_a^uf(x)\text{d}x=\int_a^\infty f(x)\text{d}x$，极限存在与否决定发散或收敛。</p>
+<p>$\int_{-\infty}^{+\infty}f(x)\text{d}x$ 取决于正负无穷，跟中间点的选取无关。</p>
+<hr>
+<h3 id="11-2"><a href="#11-2" class="headerlink" title="11.2"></a>11.2</h3><p>无穷积分收敛的柯西准则：$\int_a^\infty f(x)dx$ 收敛 $\Leftrightarrow |\int_{u_1}^{u_2}f(x)dx|&lt;\varepsilon(\exist G&gt;0,\forall u_1,u_2&gt;G)$</p>
+<p>线性性定理：$\int [k_1f(x)+k_2g(x)]dx$ 也收敛</p>
+<ul>
+<li>不加绝对值可积 单向推出 加绝对值可积</li>
+</ul>
+<p>绝对值不等式定理：若 $\forall f(x)$ 在 $[a,u]$ 可积，且绝对值可积，则不加绝对值可积</p>
+<p>比较原则极限形式：$f,g$ 极限比为常数，若 $c$ 有限，则两极限称为同敛态</p>
+<hr>
+<p>柯西判别法：</p>
+<ul>
+<li><p>$f(x)\leq\frac{1}{x^p},p&gt;1$</p>
+</li>
+<li><p>$\lim x^pf(x)=c$</p>
+</li>
+</ul>
+<p>狄利克雷判别法：</p>
+<ul>
+<li><p>$g$ 单调趋近于 $0$</p>
+</li>
+<li><p>$\int f(x)dx$ 有界</p>
+</li>
+</ul>
+<p>阿贝尔判别法：</p>
+<ul>
+<li><p>$f$ 无穷积分收敛</p>
+</li>
+<li><p>$g$ 单调有界</p>
+</li>
+</ul>
+<p>都可以用积分第二中值定理证明</p>
+<hr>
+<p>瑕积分：‘</p>
+<p>’0</p>
+<hr>
+<p>莱布尼茨法则：</p>
+<p>$$<br>\frac{d}{dx}\int_{u(x)}^{v(x)}f(t,x)dx=f(v(x),x)\cdot v’(x)-f(u(x),x)\cdot u’(x)+\int_{u(x)}^{v(x)}\frac{\partial f}{\partial x}(t,x)dt<br>$$</p>
+<hr>
+<h1 id="Universal"><a href="#Universal" class="headerlink" title="Universal"></a><em>Universal</em></h1><ol>
+<li><p>伯努利不等式：$(1+x)^n \geq 1+nx$</p>
+</li>
+<li><p>对于 $\lim\limits_{n\to \infty}x_n = x$，只有 <strong>函数连续</strong> 才有 $\lim\limits_{n \to \infty}f(x_n) = f(\lim\limits_{n \to \infty} x_n) = f(x)$</p>
+</li>
+<li><p>遇根号想有理化</p>
+</li>
+<li><p>区间可导默认连续</p>
+</li>
+<li><p>常用积分：</p>
+</li>
+</ol>
+<ul>
+<li>$\int \frac{1}{1+x^2} = \arctan x + C$</li>
+<li>$\int \frac{1}{\sqrt{1-x^2}} = \arcsin x=-\arccos x + C$</li>
+<li>$\int\sec^3xdx=\frac{1}{2}\sec x\tan x+\frac{1}{2}\ln|\sec x+\tan x| + C$</li>
+<li>$\int\frac{dx}{(x^2+a^2)^2}=\frac{x}{2a^2(x^2+a^2)}+\frac{\arctan x}{2a^3}+C$</li>
+</ul>
+<ol start="6">
+<li>积分常见三角换元：</li>
+</ol>
+<ul>
+<li>$a^2-x^2\rightarrow x=a\sin x$ 或 $x=a\cos x$</li>
+<li>$a^2+x^2\rightarrow x=a\tan x$</li>
+<li>$x^2-a^2\rightarrow x=a\sec x$</li>
+</ul>
+<ol start="7">
+<li>三角换元 $R(\sin x,\cos x)$</li>
+</ol>
+<ul>
+<li><p>$t=\tan x,\sin x=\frac{t}{\sqrt{1+t^2}},\cos x=\frac{1}{\sqrt{1+t^2}}$，适用于无理相乘式简化幂次，可消去 $\int\frac{dx}{1+x^2}$。</p>
+</li>
+<li><p>$t=\tan\frac{x}{2},\sin x=\frac{2t}{1+t^2}, \cos x=\frac{1-t^2}{1+t^2}$，适用于有理式</p>
+</li>
+</ul>
+<hr>
+<h1 id="Terminologies"><a href="#Terminologies" class="headerlink" title="Terminologies"></a><em>Terminologies</em></h1><p>临界点：$f’(x) = 0$（广义上也可以不存在）</p>
+<p>稳定点 / 不动点：$f(x) = 0$</p>
+<hr>
+<p>$\sec x=1/\cos x$</p>
+<p>$\csc x=1/\sin x$</p>
+<p>$\cot x=1/\tan x$</p>
+<hr>
+<p>跳阶乘：$(x)!! = x\times (x-2)\times\dots$</p>
+<hr>
+<h1 id="Tests"><a href="#Tests" class="headerlink" title="Tests"></a><em>Tests</em></h1><p>证明 $\lim\limits_{n \to \infty} \frac{a^n}{n!} = 0$</p>
+<ul>
+<li>应用：证明 $\lim\limits_{n \to \infty}\frac{1}{\sqrt[n]{n}} = 0$</li>
+</ul>
+<hr>
+<p>$\lim\limits_{n \to \infty} a_n = a，求证 \lim\limits_{n \to \infty} \frac{\sum_{1}^n a_i}{n} = a$ （柯西极限定理）</p>
+<hr>
+<p>$\lim\limits_{x\to \infty} \sqrt[5]{x^5+15x^4+7x} - \sqrt[3]{x^3-3x^2+2}$</p>
+<p>令 $t = 1/x$，则 $=\lim\limits_{t\to0}(\sqrt[5]{1+15t+t^4}-\sqrt[3]{1-3t+2t^3}) / t$</p>
+<p>运用 $(1+x)^a - 1 = ax$ 近似，$x$ 分别为 $15t+t^4$ 与……</p>
+<hr>
+<p>n\to\infty e=(1+1/n)^n</p>
+<p>现在求(1+n)^(1/n)在n趋近无穷的极限：<br>    其等价于n^(1/n)的极限，证明略</p>
+<p>再求(1+n^2)^(1/n)的极限：<br>    其大于n^(2/n)，小于(1+n)^2^(1/n)（即上式的平方）</p>
+<p>证明(1+1/n)^(n^2)发散：</p>
+<hr>
+<p>若 $f(x)$ 在 $[0,1]$ 上可导，且 $f(0)=0,f(1)=1$，则 $\exists x_1,x_2\in(0,1)$ 且 $x_1&lt;x_2$，使得 $\frac{1}{f’(x_1)}+\frac{1}{f’(x_2)}=2$</p>
+<ul>
+<li>介值定理：$f(\xi)=\frac{1}{2}$</li>
+<li>L-中值定理：$x_1\in(0,\xi),x_2\in(\xi,1)$<ul>
+<li>$\frac{1}{2}=f(\xi)-f(0)=f’(x_1)(\xi-0)$</li>
+<li>同理</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="T-or-F"><a href="#T-or-F" class="headerlink" title="T or F"></a><em>T or F</em></h1><p>判断正误：$存在发散数列 $a_n$，使得对于任意正整数 $k\geq2$，都有 $a_{kn}$ 收敛（√）</p>
+<ul>
+<li>例子：$a_n = (a_n \in prime) \space ? \space 0 : 1$</li>
+</ul>
+<hr>
+<p>若 $a_1 = 2,a_{n+1}=3a_n - \frac{4}{a_n + 1}$，则有 $A = 3A - \frac{4}{A+1}$，解得 $A=1$ 或 $A=-2$（舍弃）（×）</p>
+<ul>
+<li>数列发散</li>
+</ul>
+<hr>
+<p>若 $f$ 在区间 $I$ 上一致连续，且其反函数存在，则 $f^{-1}$ 在 $f(I)$ 上一致连续（×）</p>
+<ul>
+<li>$f(x) = \sqrt{x}$</li>
+</ul>
+<hr>
+<p>若 $a_n$ 满足 $\lim\limits_{n \to \infty} (a_{n+1}-a_n) = 0$，则 $a_n$ 有界（×）</p>
+<ul>
+<li>$a_n = \sum\frac{1}{i}$ 调和级数发散</li>
+</ul>
+<hr>
+<p>若 $a_n$ 满足 $\lim\limits_{n \to \infty} (2a_{n+1}-a_n) = 0$，则 $a_n$ 有界（√）</p>
+<ul>
+<li><p>题干推出 $\lim a_n = 0$</p>
+</li>
+<li><p>原式推出 $|a_{n+1} - \frac{1}{2}a_n| &lt; \frac{1}{2}\epsilon$</p>
+</li>
+<li><p>从而有 $|a_{n+1} - \frac{1}{2}a_n| + … + |\frac{1}{2^{n-N_1-1}}a_{N_1 + 1} - \frac{1}{2^{n-N_1}}a_{N_1}|&lt;\epsilon$</p>
+</li>
+<li><p>取 $N_2$ 使得单项 $&lt;\epsilon$，从而 $|a_n| \leq |a_n - | + … + $（拆分） $&lt; \epsilon$</p>
+</li>
+</ul>
+<hr>
+<p>若 $f(x)$ 在 $(0,1)$ 上有界，则 $f’(x)$ 也有界（x）</p>
+<ul>
+<li><p>$f(x)=x^\alpha\sin\frac{1}{x} &amp; 0$</p>
+<ul>
+<li>$\alpha&gt;1,f’(0)=0$</li>
+<li>$\alpha\leq1,f’(0)$ 不存在</li>
+</ul>
+</li>
+<li><p>可取 $\alpha=\frac{3}{2}$ 为反例</p>
+</li>
+</ul>
+<hr>
+<p>$\lim\limits_{h\to0}\frac{f(2h)-f(0)}{f(h)-f(0)}=2$（x）</p>
+<ul>
+<li>$f’(0)\not=0$ 成立</li>
+<li>$f’(0)=0$ 不一定成立，如 $f(x)=x^2$</li>
+</ul>
+<hr>
+<p>若 $f’(0)&gt;0$，则 $\exists\delta&gt;0,f$ 在 $U(0,\delta)$ 单调递增（x）</p>
+<ul>
+<li>$f(x)=x+|x|^{\frac{3}{2}}\sin\frac{1}{x}&amp; x$，任意小都波动</li>
+</ul>
+<hr>
+<p>$f(x)=x^3D(x)$，满足 $f(x)=f(0)+f’(0)x+\frac{f’’(0)}{2}x+o(x^2)$（x）</p>
+<p>$f(x)$ 只在 $0$ 处可导，无二阶导</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-12-31T16:00:00.000Z" title="2025/1/1 00:00:00">2025-01-01</time>发表</span><span class="level-item"><time dateTime="2025-12-27T13:46:36.191Z" title="2025/12/27 21:46:36">2025-12-27</time>更新</span><span class="level-item"><a class="link-muted" href="/project/categories/Cate/">Cate</a></span><span class="level-item">2 分钟读完 (大约252个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/project/2025/01/01/py/">py笔记</a></p><div class="content"><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">######</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="number">0b100</span>)  <span class="comment"># 二进制整数</span></span><br><span class="line"><span class="built_in">print</span>(<span class="number">0o100</span>)  <span class="comment"># 八进制整数</span></span><br><span class="line"><span class="built_in">print</span>(<span class="number">100</span>)    <span class="comment"># 十进制整数</span></span><br><span class="line"><span class="built_in">print</span>(<span class="number">0x100</span>)  <span class="comment"># 十六进制整数</span></span><br><span class="line"></span><br><span class="line"><span class="comment">######</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(<span class="number">100</span>))  <span class="comment"># &lt;class &#x27;int&#x27;&gt;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(<span class="number">123.45</span>))  <span class="comment"># &lt;class &#x27;float&#x27;&gt;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(<span class="string">&#x27;hello, world&#x27;</span>))  <span class="comment"># &lt;class &#x27;str&#x27;&gt;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(<span class="literal">True</span>))  <span class="comment"># &lt;class &#x27;bool&#x27;&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">######</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">int</span>(<span class="string">&#x27;100&#x27;</span>, base=<span class="number">16</span>))  <span class="comment"># str-&gt;十六进制int</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">bool</span>(<span class="number">1</span>))          <span class="comment"># str-&gt;bool，True</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">chr</span>(<span class="number">65</span>))           <span class="comment"># int-&gt;str，输出&#x27;d&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">ord</span>(<span class="string">&#x27;A&#x27;</span>))         <span class="comment"># str-&gt;int，100</span></span><br><span class="line"></span><br><span class="line"><span class="comment">######</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="number">11</span>//<span class="number">3</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="number">2</span> ** <span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">######</span></span><br><span class="line"></span><br><span class="line">a = <span class="literal">None</span></span><br><span class="line"><span class="built_in">print</span>(a := <span class="number">10</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="number">1</span> &lt;= a &lt;= <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">b = <span class="number">11</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;%d 你好 %d&#x27;</span> % (a, b))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&#x27;<span class="subst">&#123;a:d&#125;</span> 你好 <span class="subst">&#123;b:<span class="number">.1</span>f&#125;</span>&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">######</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="number">1</span> &lt;= a &lt;= <span class="number">100</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;你好&#x27;</span>)</span><br><span class="line"><span class="keyword">elif</span> a <span class="keyword">and</span> (<span class="keyword">not</span> b):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;你好1&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">if</span> b:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;wow&#x27;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;now&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">match</span> a:</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span> | <span class="number">3</span>: <span class="built_in">print</span>(<span class="string">&#x27;1&#x27;</span>)</span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>: <span class="built_in">print</span>(<span class="string">&#x27;2&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">######</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">import time</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        # 0 ~ 99</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">for _ in range (100): # empty, only repeat</span></span><br><span class="line"><span class="string">    time.sleep(1) # 1s</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">for i in range (0, 100, 2): # even number</span></span><br><span class="line"><span class="string">    time.sleep(0.01)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">print(sum(range(1, 3, 0.1)))</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">######</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> a &lt;= <span class="number">15</span>:</span><br><span class="line">    a += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> a &gt; <span class="number">20</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">elif</span> a &gt; <span class="number">25</span>:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line"><span class="comment">######</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line">a = random.randrange(<span class="number">1</span>, <span class="number">101</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">######</span></span><br><span class="line"></span><br><span class="line">items1 = [<span class="number">1</span>, <span class="number">1.1</span>, <span class="string">&#x27;1&#x27;</span>, <span class="literal">True</span>]</span><br><span class="line">items2 = <span class="built_in">list</span>(<span class="built_in">range</span>(<span class="number">1</span>, <span class="number">11</span>))</span><br><span class="line">items3 = <span class="built_in">list</span>(<span class="string">&#x27;hello&#x27;</span>) <span class="comment"># h e l l o</span></span><br><span class="line"><span class="built_in">print</span>(items1 + items2 + items3 * <span class="number">2</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="number">2</span> <span class="keyword">not</span> <span class="keyword">in</span> items1) <span class="comment"># False</span></span><br><span class="line"><span class="built_in">print</span>(items1[<span class="number">0</span>], items1[-<span class="number">1</span>]) <span class="comment"># forward subscript 0 ~ 4 is equal to reversed subscript -5 ~ -1</span></span><br><span class="line"><span class="built_in">print</span>(items1[<span class="number">0</span>:<span class="number">5</span>:<span class="number">2</span>]) <span class="comment"># range [0,5), span is 2, namely 0, 2, 4, they can also be negative</span></span><br><span class="line"><span class="built_in">print</span>(items1[:], items1[::]) <span class="comment"># acquiescently 0, ending, 1</span></span><br><span class="line"><span class="comment"># such options can also be used to modify lists</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># lists can be compared, like ==, !=, &lt;= ..., the rule is comparing each elements one by one(parallel[adv])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># type 1 to traverse each one:</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(items1)):</span><br><span class="line">    <span class="built_in">print</span>(items1[i], end = <span class="string">&#x27; &#x27;</span>)</span><br><span class="line"><span class="comment"># type 2:</span></span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> items1:</span><br><span class="line">    <span class="built_in">print</span>(item, end = <span class="string">&quot; &quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">######</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/project/">上一页</a></div><div class="pagination-next is-invisible is-hidden-mobile"><a href="/project/page/3/">下一页</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/project/">1</a></li><li><a class="pagination-link is-current" href="/project/page/2/">2</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/project/img/avatar.jpg" alt="wandery"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">wandery</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Hangzhou, Zhejiang</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/project/archives/"><p class="title">15</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/project/categories/"><p class="title">4</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/project/tags/"><p class="title">3</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/newamnesia" target="_blank" rel="me noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/newamnesia"><i class="fab fa-github"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/project/categories/ATcoder/"><span class="level-start"><span class="level-item">ATcoder</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/project/categories/Cate/"><span class="level-start"><span class="level-item">Cate</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/project/categories/CodeForces/"><span class="level-start"><span class="level-item">CodeForces</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/project/categories/note/"><span class="level-start"><span class="level-item">note</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2999-12-31T16:00:00.000Z">3000-01-01</time></p><p class="title"><a href="/project/3000/01/01/leading/">Begin Here</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-02-05T07:52:09.090Z">2026-02-05</time></p><p class="title"><a href="/project/2026/02/05/%E6%95%B0%E8%AE%BA/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-02-05T07:52:09.087Z">2026-02-05</time></p><p class="title"><a href="/project/2026/02/05/%E5%9B%BE%E8%AE%BA/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-01-26T06:15:00.000Z">2026-01-26</time></p><p class="title"><a href="/project/2026/01/26/!ARC213/">ARC213</a></p><p class="categories"><a href="/project/categories/ATcoder/">ATcoder</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-01-24T15:20:00.000Z">2026-01-24</time></p><p class="title"><a href="/project/2026/01/24/!(2)CF1072-div3&amp;2184/">CF1072-div3 / Contest 2184</a></p><p class="categories"><a href="/project/categories/CodeForces/">CodeForces</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/project/archives/3000/01/"><span class="level-start"><span class="level-item">一月 3000</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/project/archives/2026/02/"><span class="level-start"><span class="level-item">二月 2026</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/project/archives/2026/01/"><span class="level-start"><span class="level-item">一月 2026</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile" href="/project/archives/2025/11/"><span class="level-start"><span class="level-item">十一月 2025</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/project/archives/2025/01/"><span class="level-start"><span class="level-item">一月 2025</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/project/tags/Tag/"><span class="tag">Tag</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/project/tags/math/"><span class="tag">math</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/project/tags/oi/"><span class="tag">oi</span><span class="tag">8</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="订阅"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/project/"><img src="/project/img/logo.svg" alt="Blog" height="28"></a><p class="is-size-7"><span>&copy; 2026 wandery</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/project/js/column.js"></script><script src="/project/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/project/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/project/js/pjax.js"></script><!--!--><!--!--><!--!--><script data-pjax src="/project/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/project/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/project/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
