@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>字符串 - Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Blog"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Updating (ovo)"><meta property="og:type" content="blog"><meta property="og:title" content="字符串"><meta property="og:url" content="https://newamnesia.github.io/2026/02/28/String/"><meta property="og:site_name" content="Blog"><meta property="og:description" content="Updating (ovo)"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://newamnesia.github.io/img/og_image.png"><meta property="article:published_time" content="2026-02-28T06:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T12:10:37.337Z"><meta property="article:tag" content="oi"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://newamnesia.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://newamnesia.github.io/2026/02/28/String/"},"headline":"字符串","image":["https://newamnesia.github.io/img/og_image.png"],"datePublished":"2026-02-28T06:00:00.000Z","dateModified":"2026-02-28T12:10:37.337Z","author":{"@type":"Person","name":null},"publisher":{"@type":"Organization","name":"Blog","logo":{"@type":"ImageObject","url":"https://newamnesia.github.io/img/logo.svg"}},"description":"Updating (ovo)"}</script><link rel="canonical" href="https://newamnesia.github.io/2026/02/28/String/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/contest">Contest</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2026-02-28T06:00:00.000Z" title="2026/2/28 14:00:00">2026-02-28</time>发表</span><span class="level-item"><time dateTime="2026-02-28T12:10:37.337Z" title="2026/2/28 20:10:37">2026-02-28</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/note/">note</a></span><span class="level-item">14 分钟读完 (大约2107个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">字符串</h1><div class="content"><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ul>
+<li><p><a href="#1">字符串基础</a></p>
+</li>
+<li><p><a href="#2">Hash / 哈希</a></p>
+</li>
+<li><p><a href="#3">Trie / 字典树</a></p>
+</li>
+<li><p><a href="#4">KMP</a></p>
+</li>
+<li><p><a href="#5">Z 函数 / exKMP</a></p>
+</li>
+<li><p><a href="#6">Manacher</a></p>
+</li>
+</ul>
+<hr>
+<h1 id="字符串基础"><a href="#字符串基础" class="headerlink" title="字符串基础"></a><span id="1">字符串基础</span></h1><ul>
+<li>一些概念</li>
+</ul>
+<p>$\text{LCP}$(longest common prefix)：最长公共前缀。</p>
+<p>$\text{LCS}$(longest common subsequence / substring)：最长公共子序列 / 子串。</p>
+<p>$\text{LPS}$(longest palindromic sub…)：最长回文子串。</p>
+<ul>
+<li><span id="1-1"><strong>弱周期引理</strong></span></li>
+</ul>
+<p>如果一个字符串同时存在两个周期 $p$ 和 $q$，那么 $\text{gcd}(p,q)$ 也是一个周期（可以用类似辗转相除法的覆盖方法得到长度 $\text{gcd}(p,q)$）。</p>
+<h1 id="Hash-哈希"><a href="#Hash-哈希" class="headerlink" title="Hash / 哈希"></a><span id="2">Hash / 哈希</span></h1><p><strong>（基础知识）</strong></p>
+<p>字符串中，我们可以让每一个字符串对应一个值，将所有串映射到一个较小的值域中，从而可以便捷地进行比较操作。</p>
+<p>考虑一个多位数字的组成，有进制和位数两个关键元素。类似的，我们也可以设置能包含所有字符的进制，每位即是一个字符。</p>
+<p>但这样的数字通常不小，我们可以再添加一个模数，将哈希值限制在一个可以接受的区间内。</p>
+<p>比如说一个小写字母的字符串，我们可以将 $a$ 到 $z$ 分别对应到 $1$ 至 $26$，进制为 $114$，模数为 $514$：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">abcd -&gt; (1 * 114^3 + 2 * 114^2 + 3 * 114^1 + 4 * 114^0) % 514</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>以类似数的形式设置哈希值，可以让我们 $O(1)$ 直接计算字符串的结合 / 分割。</li>
+</ul>
+<hr>
+<p><strong>（哈希冲突）</strong></p>
+<p>显然，由于模的存在，存在两个字符串的哈希值相等的情况难以避免，我们将其称为哈希冲突。</p>
+<p>好的进制 &amp; 模数可以降低哈希冲突出现的概率：</p>
+<ul>
+<li><p>一般选取质数，因为如果存在公因子，可能出现规律的哈希冲突。</p>
+</li>
+<li><p>模数要适当的增大，从而增大值域。</p>
+</li>
+</ul>
+<hr>
+<p><strong>（多哈希）</strong></p>
+<p>更进一步，我们也可以设置多个映射函数。不同的字符串，对于两种映射方式，冲突的概率会大大降低。</p>
+<p><strong>（哈希表）</strong></p>
+<p>对于某个哈希值可能出现的冲突，我们可以直接将所有哈希值等于此的原串以链表的形式存储下来（当然，原串数量需要可接受），单次查询的复杂度接近 $O(1)$。</p>
+<ul>
+<li>$\text{STL}$ unordered_map 便是基于此实现的。</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3370">P3370 【模板】字符串哈希</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/U461211">U461211 字符串 Hash（数据加强）</a></p>
+<hr>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/CF1200E">CF1200E Compress Words</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P4824">P4824 [USACO15FEB] Censoring S</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3498">P3498 [POI 2010] KOR-Beads</a></p>
+<hr>
+<p><strong>（可错配问题）</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P4503">P4503 [CTSC2014] 企鹅 QQ</a></p>
+<p>本题为一次错配，只需要逐一枚举可能的错配点判断即可。</p>
+<p>对于 $k$ 次错配的问题，可以先选取两个要比较的字符串，二分从开始能匹配的最长距离，再暴力走错配点，复杂度 $O(m+kn\log m)$，其中 $n$ 为字符串数量，$m$ 为所有字符串总长。</p>
+<hr>
+<h1 id="Trie-字典树"><a href="#Trie-字典树" class="headerlink" title="Trie / 字典树"></a><span id="3">Trie / 字典树</span></h1><p><strong>字符串相关</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P8306">P8306 【模板】字典树</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P4407">P4407 [JSOI2009] 电子字典</a></p>
+<ul>
+<li>$\text{Trie}$ 树浅层的大量合并使得实际复杂度降低。</li>
+</ul>
+<p><strong>$\text{01}$ 串相关</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P4551">P4551 最长异或路径</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/CF1416C">CF1416C XOR Inverse</a></p>
+<hr>
+<h1 id="KMP"><a href="#KMP" class="headerlink" title="KMP"></a><span id="4">KMP</span></h1><p>$\text{KMP}$ 算法可以通过线性预处理，解决字符串匹配的问题。</p>
+<ul>
+<li>$\text{border}$：一个子串即是前缀也是后缀。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如 abc*!@&amp;%~abc</span><br><span class="line">abc 就是原串的一个 border。</span><br></pre></td></tr></table></figure>
+
+<p>（如果你想在目标串上对模式串尝试匹配，可以在目标串前加一模式串，这样能匹配的位置就是一个 $\text{border}$。)</p>
+<ul>
+<li>$\text{next}$ 数组：对于当前选定字符串 $s$，最长的既是真前缀也是真后缀的子串长度，即小于 $|s|$ 的最长的 $\text{border}$ 长。</li>
+</ul>
+<p>$\text{KMP}$ 的最直接目的是在线性的时间下处理出 $\text{next}$ 数组：</p>
+<hr>
+<p>重要性质：下一个 $\text{next}$ 数组的值最多增加 1。</p>
+<ul>
+<li>反证法：若 $\text{next}[i+1]-\text{next}[i]=a-b&gt;1$，则在位置 $i+1$ 基础上两个 $\text{border}$ 同时在末端除去一个元素，可得 $i$ 处的一个 $\text{border}$ 长度为 $a-1(&gt;b)$。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// s : 从 0 到 n - 1</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>, j = <span class="number">0</span>; i &lt; n; ++ i )&#123;</span><br><span class="line">    <span class="keyword">while</span>(j &amp;&amp; s[i] != s[j]) j = next[j];</span><br><span class="line">    <span class="comment">//通过不断失配尝试匹配。理解 next 数组的作用。</span></span><br><span class="line">    <span class="keyword">if</span>(s[i] == s[j]) ++j;</span><br><span class="line">    <span class="comment">//性质：下一个 next 数组值最多增加 1。</span></span><br><span class="line">    next[i] = j;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// s : 从 1 到 n</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">2</span>, j = <span class="number">0</span>; i &lt;= n; ++ i )&#123;</span><br><span class="line">    <span class="keyword">while</span>(j &amp;&amp; s[i] != s[j + <span class="number">1</span>]) j = next[j];</span><br><span class="line">    <span class="keyword">if</span>(s[i] == s[j + <span class="number">1</span>]) ++j;</span><br><span class="line">    next[i] = j;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>$\text{next}$ 数组也可以与树上问题产生联系。</p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3375">P3375 【模板】KMP</a></p>
+<hr>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P4391">P4391 [BalticOI 2009] Radio Transmission 无线传输</a></p>
+<ul>
+<li>性质：如果存在 $\text{border}$，那么 $n-|\text{border}|$ 一定是原串的一个周期。</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3435">P3435 [POI 2006] OKR-Periods of Words</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P4824">P4824 [USACO15FEB] Censoring S</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P2375">P2375 [NOI2014] 动物园</a></p>
+<hr>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3426">P3426 [POI 2005] SZA-Template</a></p>
+<ul>
+<li>极简 $\text{DP}$ 思路。（最高赞的题解）</li>
+</ul>
+<p>考虑利用 $\text{border}$。如果某个串能至少覆盖前面 $n-next[i]$ 个字符，那么一定可以覆盖后面 $next[i]$ 个字符。于是设 $f[i]$ 为能够覆盖前缀长度 $i$ 的字符的最短答案。转移为 $f[j]=f[next[i]],i-j\leq next[i]$。</p>
+<p>我个人会从感性的角度质疑为什么小的 $\text{border}$ 答案在中途不可行也不会掩盖大的 $\text{border}$，原因是此时大的 $\text{border}$ 只可能无法被小的 $\text{border}$ 覆盖，那么显然大 $\text{border}$ 向后延伸也不会用到小的 $\text{border}$。换句话说，如果短串能表示长串，那么长串一定不优，所以答案互不干涉。</p>
+<hr>
+<ul>
+<li>树上思路。（<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/article/k95xx5w2">引用来源的洛谷博客</a>）</li>
+</ul>
+<p>如果某个 $\text{border}$ 能够覆盖整个串，那么所有 $\text{border}$ 为其的位置的相邻距离不超过 $|\text{border}|$，表现到树上就是其所有子节点集合排列后，相邻位置距离不超过 $|\text{border}|$。</p>
+<p>个人感觉可以通过启发式合并实现。</p>
+<hr>
+<ul>
+<li>优秀的性质。（<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/article/29u3sgfh">引用来源的洛谷博客</a>）</li>
+</ul>
+<p><strong>定理：对于某字符串，其所有长度 $\geq n/2$ 的 $\text{border}$ 的长度是一个等差数列，且可以互相表示。</strong></p>
+<p>证明：设最大的 $\text{border}$ 长度为 $n-p$，那么 $p$ 是原串的一个周期。再选取一个 $\text{border}$ 长度为 $n-q$，那么 $q$ 是原串的一个周期。根据<a href="#1-1">弱周期引理</a>，$\text{gcd}(p,q)$ 也是原串的一个周期。</p>
+<p>但我们已经钦定 $p$ 为最短的周期，所以 $\text{gcd}(p,q)=p$，从而 $p\mid q$。</p>
+<p>不难发现，$kp$ 都是原串的周期，因此 $n-kp$ 都是原串的 $\text{border}$，等差数列是完整的。且 $|\text{border}|\geq n/2$ 时，小的 $\text{border}$ 可以表示大的 $\text{border}$。</p>
+<hr>
+<p>据此，一个字符串的所有 $\text{border}$ 可以被划分为 $O(\log n)$ 个等差数列，每个数列末尾是对于该数列开头最长串的最小的长度大于 $len/2$ 的 $\text{border}$。</p>
+<p>因此可能作为最终答案的 $\text{border}$ 的数量级为 $O(\log n)$，从小到大用哈希 + $\text{DP}$ 判断是否可覆盖。</p>
+<hr>
+<h1 id="Z-函数-exKMP"><a href="#Z-函数-exKMP" class="headerlink" title="Z 函数 / exKMP"></a><span id="5">Z 函数 / exKMP</span></h1><p>与 $\text{KMP}$ 类似，我们所求的 $Z$ 函数 $z[i]$ 代表：字符串 $s$ 与其后缀 $s[i,n-1]$ 的最长公共前缀（$\text{LCP}$）的长度。</p>
+<p>$\text{KMP}$ 与 $Z$ 函数的信息是相同的，只不过表现形式不同。</p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5410">P5410 【模板】扩展 KMP / exKMP（Z 函数）</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P7114">P7114 [NOIP2020] 字符串匹配</a></p>
+<hr>
+<h1 id="Manacher"><a href="#Manacher" class="headerlink" title="Manacher"></a><span id="6">Manacher</span></h1><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3805">P3805 【模板】Manacher</a></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>字符串</p><p><a href="https://newamnesia.github.io/2026/02/28/String/">https://newamnesia.github.io/2026/02/28/String/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>发布于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/oi/">oi</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/3000/01/01/index/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Start Here</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2026/02/25/Polinomial_GF/"><span class="level-item">多项式与生成函数</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card" id="comments"><div class="card-content"><h3 class="title is-5">评论</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://newamnesia.github.io/2026/02/28/String/';
+            this.page.identifier = '2026/02/28/String/';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'wandery' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.jpg" alt="wandery"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">wandery</p><p class="is-size-6 is-block">Under Construction...</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Hangzhou, Zhejiang</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives/"><p class="title">10</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories/"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags/"><p class="title">2</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/newamnesia" target="_blank" rel="me noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/newamnesia"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="QQ" href="https://user.qzone.qq.com/3450265471"><i class="fab fa-qq"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://codeforces.com/profile/wandery" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Codeforces(Active account)</span></span><span class="level-right"><span class="level-item tag">codeforces.com</span></span></a></li><li><a class="level is-mobile" href="https://atcoder.jp/users/wandery" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">AtCoder(Active account)</span></span><span class="level-right"><span class="level-item tag">atcoder.jp</span></span></a></li><li><a class="level is-mobile" href="https://oi-wiki.org/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Oiwiki</span></span><span class="level-right"><span class="level-item tag">oi-wiki.org</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/lectureware/"><span class="level-start"><span class="level-item">lectureware</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/note/"><span class="level-start"><span class="level-item">note</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2999-12-31T16:00:00.000Z">3000-01-01</time></p><p class="title"><a href="/3000/01/01/index/">Start Here</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-02-28T06:00:00.000Z">2026-02-28</time></p><p class="title"><a href="/2026/02/28/String/">字符串</a></p><p class="categories"><a href="/categories/note/">note</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-02-25T09:00:00.000Z">2026-02-25</time></p><p class="title"><a href="/2026/02/25/Polinomial_GF/">多项式与生成函数</a></p><p class="categories"><a href="/categories/note/">note</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-02-23T11:30:00.000Z">2026-02-23</time></p><p class="title"><a href="/2026/02/23/Graph_Algorithm/">图论</a></p><p class="categories"><a href="/categories/note/">note</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-02-15T14:30:00.000Z">2026-02-15</time></p><p class="title"><a href="/2026/02/15/20260214math/">20260214math</a></p><p class="categories"><a href="/categories/lectureware/">lectureware</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/3000/01/"><span class="level-start"><span class="level-item">一月 3000</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2026/02/"><span class="level-start"><span class="level-item">二月 2026</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/11/"><span class="level-start"><span class="level-item">十一月 2025</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/01/"><span class="level-start"><span class="level-item">一月 2025</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/lessons/"><span class="tag">lessons</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/oi/"><span class="tag">oi</span><span class="tag">8</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Blog" height="28"></a><p class="is-size-7"><span>&copy; 2026 Blog</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mhchem.min.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/javascript" id="MathJax-script" async>MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      },
+      chtml: {
+        matchFontHeight: false
+      }
+    };</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
