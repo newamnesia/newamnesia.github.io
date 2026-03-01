@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>CF1074-div4 / Contest 2185 - Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Blog"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Click to view details."><meta property="og:type" content="blog"><meta property="og:title" content="CF1074-div4 / Contest 2185"><meta property="og:url" content="https://newamnesia.github.io/contest/CF2185.html"><meta property="og:site_name" content="Blog"><meta property="og:description" content="Click to view details."><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://newamnesia.github.io/img/og_image.png"><meta property="article:published_time" content="2026-01-18T12:15:00.000Z"><meta property="article:modified_time" content="2026-02-26T02:33:20.457Z"><meta property="article:tag" content="oi"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://newamnesia.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://newamnesia.github.io/contest/CF2185.html"},"headline":"CF1074-div4 / Contest 2185","image":["https://newamnesia.github.io/img/og_image.png"],"datePublished":"2026-01-18T12:15:00.000Z","dateModified":"2026-02-26T02:33:20.457Z","author":{"@type":"Person","name":null},"publisher":{"@type":"Organization","name":"Blog","logo":{"@type":"ImageObject","url":"https://newamnesia.github.io/img/logo.svg"}},"description":"Click to view details."}</script><link rel="canonical" href="https://newamnesia.github.io/contest/CF2185.html"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>图论 - Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Blog"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Updating (ovo)"><meta property="og:type" content="blog"><meta property="og:title" content="图论"><meta property="og:url" content="https://newamnesia.github.io/2026/02/23/Graph_Theory/"><meta property="og:site_name" content="Blog"><meta property="og:description" content="Updating (ovo)"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://newamnesia.github.io/img/og_image.png"><meta property="article:published_time" content="2026-02-23T11:30:00.000Z"><meta property="article:modified_time" content="2026-03-01T10:55:19.946Z"><meta property="article:tag" content="oi"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://newamnesia.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://newamnesia.github.io/2026/02/23/Graph_Theory/"},"headline":"图论","image":["https://newamnesia.github.io/img/og_image.png"],"datePublished":"2026-02-23T11:30:00.000Z","dateModified":"2026-03-01T10:55:19.946Z","author":{"@type":"Person","name":null},"publisher":{"@type":"Organization","name":"Blog","logo":{"@type":"ImageObject","url":"https://newamnesia.github.io/img/logo.svg"}},"description":"Updating (ovo)"}</script><link rel="canonical" href="https://newamnesia.github.io/2026/02/23/Graph_Theory/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
   (function () {
       function switchTab() {
           if (!location.hash) {
@@ -29,25 +29,119 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/contest">Contest</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><h1 class="title is-3 is-size-4-mobile">CF1074-div4 / Contest 2185</h1><div class="content"><h3 id="Problem-A"><a href="#Problem-A" class="headerlink" title="Problem A"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2185/problem/A">Problem A</a></h3><p>弱智题</p>
-<h3 id="Problem-B"><a href="#Problem-B" class="headerlink" title="Problem B"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2185/problem/B">Problem B</a></h3><p>弱智题</p>
-<h3 id="Problem-C"><a href="#Problem-C" class="headerlink" title="Problem C"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2185/problem/C">Problem C</a></h3><p>$Mex$ 签到题</p>
-<h3 id="Problem-D"><a href="#Problem-D" class="headerlink" title="Problem D"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2185/problem/D">Problem D</a></h3><p>时间戳签到题</p>
-<h3 id="Problem-E"><a href="#Problem-E" class="headerlink" title="Problem E"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2185/problem/E">Problem E</a></h3><p>STL练习题</p>
-<h3 id="Problem-F"><a href="#Problem-F" class="headerlink" title="Problem F"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2185/problem/F">Problem F</a></h3><p>我用的倍增+位运算</p>
-<h3 id="Problem-G"><a href="#Problem-G" class="headerlink" title="Problem G"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2185/problem/G">Problem G</a></h3><p>$mex$ 问题考虑贡献，未知有无其他方法</p>
-<h3 id="Problem-H"><a href="#Problem-H" class="headerlink" title="Problem H"></a><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2185/problem/H">Problem H</a></h3><p>题解只使用了前缀和 + 二分，理论复杂度为小常数 $O(n\log n\log m)$</p>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/contest">Contest</a></div><div class="navbar-end"><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2026-02-23T11:30:00.000Z" title="2026/2/23 19:30:00">2026-02-23</time>发表</span><span class="level-item"><time dateTime="2026-03-01T10:55:19.946Z" title="2026/3/1 18:55:19">2026-03-01</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/note/">note</a></span><span class="level-item">8 分钟读完 (大约1181个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">图论</h1><div class="content"><h1 id="欧拉图"><a href="#欧拉图" class="headerlink" title="欧拉图"></a>欧拉图</h1><p>欧拉路径：经过图中每条边恰好一次。</p>
+<p>存在欧拉回路的图称为欧拉图，只有欧拉路径的图称为半欧拉图。</p>
+<hr>
+<p>下面三个条件是等价的：</p>
 <ul>
-<li>AI 说题解可退化被卡掉，但我没有细究……</li>
+<li><p>$G$ 是欧拉图。</p>
+</li>
+<li><p>$G$ 中每个点的度数都是偶数。</p>
+</li>
+<li><p>$G$ 可被分解为若干条不共边回路的并</p>
+</li>
 </ul>
-<p>我的实现比较复杂，涉及前缀和、二分、单点加 &amp; 按排名查询，理论复杂度为 $O(n\log n)$，常数可小可大（我懒得优化）</p>
+<hr>
+<h1 id="连通性相关"><a href="#连通性相关" class="headerlink" title="连通性相关"></a>连通性相关</h1><h3 id="1-text-DFS-生成树"><a href="#1-text-DFS-生成树" class="headerlink" title="1. $\text{DFS}$ 生成树"></a>1. $\text{DFS}$ 生成树</h3><p>有向图经过 $\text{DFS}$ 序标号后，所有的边可以分为以下几类：</p>
+<ol>
+<li><p>树边：指向 $\text{DFS}$ 生成树的子节点。</p>
+</li>
+<li><p>返祖边：指向祖先节点的边。</p>
+</li>
+<li><p>横叉边：指向先前访问过的非祖先节点。</p>
+</li>
+<li><p>前向边：指向（更深层的）子树节点，非树边。</p>
+</li>
+</ol>
+<p>而在无向图中，一定不存在横叉边，因为访问其中一个节点时另一个一定会被纳为子节点。</p>
+<hr>
+<h3 id="2-强联通分量-text-SCC"><a href="#2-强联通分量-text-SCC" class="headerlink" title="2. 强联通分量 / $\text{SCC}$"></a>2. 强联通分量 / $\text{SCC}$</h3><p>定义：极大强联通子图，内部节点互相可达。</p>
+<p><strong>Tarjan 算法</strong></p>
+<p>我们需要维护的有：</p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://codeforces.com/contest/2185/submission/359221149">$Code$</a></li>
+<li><p>每个节点的 $\text{DFN}$ 序 $dfn[u]$。</p>
+</li>
+<li><p>从根到当前节点的路径的栈。</p>
+</li>
+<li><p>$low[u]$，代表 $u$ 的子树中能回溯到的最早的栈中节点。</p>
+</li>
 </ul>
-<p>$Summary$：有思维要求，有很多细节需要理清楚，如果用了可能会比较恶心人……</p>
-</div><div class="article-licensing box"><div class="licensing-title"><p>CF1074-div4 / Contest 2185</p><p><a href="https://newamnesia.github.io/contest/CF2185.html">https://newamnesia.github.io/contest/CF2185.html</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>发布于</h6><p>2026-01-18</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-26</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/"></a></div><!--!--></article></div><!--!--><div class="card" id="comments"><div class="card-content"><h3 class="title is-5">评论</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
-            this.page.url = 'https://newamnesia.github.io/contest/CF2185.html';
-            this.page.identifier = '/contest/CF2185.html';
+<p>假定当某个节点出栈后，其所在所有联通分量已经处理完成，那么我们就不必考虑符合此情况的横叉边和前向边。如果是树边，那么用 $low[v]$ 去更新 $low[u]$；如果是返祖边，则用 $dfn[v]$ 去更新 $low[u]$。</p>
+<p>当出现 $dfn[u]=low[u]$ 的情况时，意味着我们找到了一个 $\text{SCC}$。不断弹出进行标记即可。</p>
+<ul>
+<li>可以将每个 $\text{SCC}$ 缩成一个点，从而得到 $\text{DAG}$。</li>
+</ul>
+<hr>
+<h3 id="3-割点和桥"><a href="#3-割点和桥" class="headerlink" title="3. 割点和桥"></a>3. 割点和桥</h3><p><strong>割点 / 割顶</strong></p>
+<p>定义：删去此点后图中极大联通分量数增加。</p>
+<p>仍然是利用 Tarjan 算法，类似地记录 $dfn[u]$ 和 $low[u]$。由于这里是无向边，就记录为不经过其 $\text{DFS}$ 的父节点（可达但不过），能到达的标号最小的点。</p>
+<p>如果一个点是割点，那么：</p>
+<ul>
+<li><p>如果该点是根节点，只需要满足与其直接相连的点的数量 $\geq 2$。</p>
+</li>
+<li><p>否则，需要存在其某个子节点 $v$ 满足 $low[v]\geq dfn[u]$。</p>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3388">P3388 【模板】割点（割顶）</a></p>
+<hr>
+<p><strong>割边 / 桥（无重边）</strong></p>
+<p>定义：删去此边后图中极大联通分量数增加。</p>
+<p>割边的考虑更为简单，只需要让 $low[v]&gt;dfn[u]$，且不需要考虑根节点。</p>
+<p><strong>割边 / 桥（有重边）</strong></p>
+<p>记录刚刚走过的边的编号 $fa$，将“不用父节点更新”改为“不用已经走过的边更新”。</p>
+<p>另一种思路，是标记判断是否已经有一条边联通父节点，已有再更新。</p>
+<hr>
+<h3 id="4-双联通分量"><a href="#4-双联通分量" class="headerlink" title="4. 双联通分量"></a>4. 双联通分量</h3><p>（默认在无向连通图中）</p>
+<p>点双联通：无论删去哪一个除了 $u$ 和 $v$ 之外的点，都不能使 $u$ 和 $v$ 不联通。</p>
+<p>边双联通：无论删去哪一条边，都不能使 $u$ 和 $v$ 不联通。</p>
+<ul>
+<li>边双具有传递性，而点双不具有。</li>
+</ul>
+<p>点（边）双联通分量：极大点（边）双联通子图。</p>
+<hr>
+<p><strong>边双联通分量</strong></p>
+<ul>
+<li>Tarjan - 1</li>
+</ul>
+<p>求出所有的桥，再 $\text{DFS}$。</p>
+<ul>
+<li>Tarjan - 2</li>
+</ul>
+<p>等价于求 $\text{DFS}$ 生成树上的强联通分量。</p>
+<ul>
+<li>差分算法</li>
+</ul>
+<p>考虑一个树边什么情况下会变成桥。显然非树边不会是桥，因为还有一条树边组成的路径与其等价。那么没有被覆盖的树边就是桥。在深度较大的点 $+1$，较小的 $-1$，线性处理子树价值和。如果 $cnt[u]=cnt[v]$，代表从 $u$ 到 $v$ 的树边没有被其他非树边覆盖，从而是桥。然后再用一遍 $\text{DFS}$ 求答案。</p>
+<hr>
+<p><strong>点双联通分量</strong></p>
+<ul>
+<li>Tarjan</li>
+</ul>
+<p>参考性质：</p>
+<ul>
+<li><p>两个点双最多有一个公共点，且这个点一定是割点。</p>
+</li>
+<li><p>对于一个点双，其 $dfn$ 最小的点一定是割点或者树根。</p>
+<ul>
+<li><p>如果是割点，则是点双的根。</p>
+</li>
+<li><p>如果是树根：</p>
+<ul>
+<li><p>有至少两个（$\text{DFS}$ 生成树中的）子树，则是一个割点（无向图不存在横叉边）。</p>
+</li>
+<li><p>只有一个子树，则是点双的根。</p>
+</li>
+<li><p>没有子树，则视作单独的点双。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+</div><div class="article-licensing box"><div class="licensing-title"><p>图论</p><p><a href="https://newamnesia.github.io/2026/02/23/Graph_Theory/">https://newamnesia.github.io/2026/02/23/Graph_Theory/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>发布于</h6><p>2026-02-23</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-03-01</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/oi/">oi</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2026/02/25/Polinomial_GF/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">多项式与生成函数</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2026/02/15/20260214math/"><span class="level-item">20260214math</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card" id="comments"><div class="card-content"><h3 class="title is-5">评论</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://newamnesia.github.io/2026/02/23/Graph_Theory/';
+            this.page.identifier = '2026/02/23/Graph_Theory/';
         };
         (function() {
             var d = document, s = d.createElement('script');  
